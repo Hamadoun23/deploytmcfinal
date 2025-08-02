@@ -1,0 +1,132 @@
+/* Code couleur Toguna - Custom Colors for TMC Website */
+
+/* Variables de couleurs Toguna */
+:root {
+  --toguna-vert: #068953;
+  --toguna-bleu: #0a57a4;
+  --toguna-blanc: #FFFFFF;
+}
+
+/* Override background colors - Blanc */
+body {
+  background-color: var(--toguna-blanc) !important;
+}
+
+.body-bg {
+  background-color: var(--toguna-blanc) !important;
+}
+
+.hero-2-bg {
+  background-color: var(--toguna-blanc) !important;
+}
+
+/* Override text colors - Titres en Vert */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--toguna-vert) !important;
+}
+
+.section__title-wrapper-title,
+.section__title-wrapper-2-title {
+  color: var(--toguna-vert) !important;
+}
+
+/* Override button colors - Boutons en Vert avec texte Blanc */
+.rr-btn {
+  background-color: var(--toguna-vert) !important;
+  color: var(--toguna-blanc) !important;
+}
+
+.rr-btn:hover {
+  background-color: var(--toguna-bleu) !important;
+  color: var(--toguna-blanc) !important;
+}
+
+.rr-btn.btn-transparent {
+  border-color: var(--toguna-bleu) !important;
+  color: var(--toguna-bleu) !important;
+}
+
+.rr-btn.btn-transparent:hover {
+  background-color: var(--toguna-bleu) !important;
+  color: var(--toguna-blanc) !important;
+}
+
+/* Override theme primary color for accents - Vert */
+.rr-theme-primary {
+  color: var(--toguna-vert) !important;
+}
+
+/* Override heading primary color - Bleu */
+.rr-heading-primary {
+  color: var(--toguna-bleu) !important;
+}
+
+/* Override any remaining brown colors - Remplacer par Bleu */
+[style*="#453030"] {
+  color: var(--toguna-bleu) !important;
+}
+
+/* Override any remaining yellow colors - Remplacer par Vert */
+[style*="#FFDA59"] {
+  color: var(--toguna-vert) !important;
+}
+
+/* Override any remaining background colors - Remplacer par Blanc */
+[style*="#F6F0E9"] {
+  background-color: var(--toguna-blanc) !important;
+}
+
+[style*="#EEEEEE"] {
+  background-color: var(--toguna-blanc) !important;
+}
+
+/* Couleur bleue pour le titre Mining */
+.solutions {
+  color: var(--toguna-bleu) !important;
+  font-weight: bold !important;
+}
+
+/* Couleur bleue pour "ans d'experience" */
+._split_text {
+  color: var(--toguna-bleu) !important;
+}
+
+/* Couleur bleue pour "la communauté" */
+.section__subtitle {
+  color: var(--toguna-bleu) !important;
+}
+
+/* Force la couleur bleue pour "la communauté" avec plus de spécificité */
+.section__title-wrapper-4 .section__subtitle {
+  color: var(--toguna-bleu) !important;
+}
+
+/* Alternative avec sélecteur plus spécifique */
+h2 .section__subtitle {
+  color: var(--toguna-bleu) !important;
+}
+
+/* Couleur bleue pour "Actions caritatives réalisées" */
+.about-section__right__count h5 {
+  color: var(--toguna-bleu) !important;
+}
+
+/* Couleur bleue pour le nombre "+54" */
+.about-section__right__count h4 {
+  color: var(--toguna-bleu) !important;
+}
+
+/* Style pour le bouton "Voir la gallerie media" - Bleu avec texte Blanc */
+.tp-hover-btn {
+  background-color: var(--toguna-bleu) !important;
+  color: var(--toguna-blanc) !important;
+}
+
+.tp-hover-btn:hover {
+  background-color: #068953 !important;
+  color: var(--toguna-blanc) !important;
+}
+
+.tp-btn-circle-text-2 {
+  color: var(--toguna-blanc) !important;
+} 

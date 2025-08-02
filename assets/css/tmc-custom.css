@@ -1,0 +1,430 @@
+/* TMC Custom Colors - Toguna Mining Corporation */
+
+:root {
+    /* TMC Colors */
+    --tmc-primary: #068953;    /* Vert principal */
+    --tmc-secondary: #0a57a4;  /* Bleu secondaire */
+    --tmc-white: #FFFFFF;      /* Blanc */
+    
+    /* Override existing color variables */
+    --tp-common-white: #FFFFFF;
+    --tp-common-black: #141414;
+    --tp-theme-green: #068953;
+    --tp-common-green-regular: #068953;
+    --tp-common-blue: #0a57a4;
+}
+
+/* Global background white */
+body {
+    background-color: #FFFFFF !important;
+}
+
+/* All sections with white background */
+.tp-hero-2-wrapper,
+.tp-hero-2-area,
+.des-text-moving-area,
+.des-about-area,
+.tp-service-2-area,
+.tp-portfolio-2-area,
+.tp-testimonial-2-area,
+.tp-brand-2-area,
+.tp-cta-2-area,
+.tp-footer-2-area,
+.tp-header-2-area,
+.tp-offcanvas-2-area,
+.tp-mobile-menu-active,
+.tp-back-to-top-wrapper,
+#preloader,
+#smooth-wrapper,
+#smooth-content,
+main,
+header,
+footer {
+    background-color: #FFFFFF !important;
+}
+
+/* Primary color elements (buttons, links, etc.) */
+.tp-btn-border,
+.tp-btn,
+.tp-btn-2,
+.tp-btn-3,
+.tp-btn-4,
+.tp-btn-5,
+.tp-btn-6,
+.tp-btn-7,
+.tp-btn-8,
+.tp-btn-9,
+.tp-btn-10,
+.tp-btn-11,
+.tp-btn-12,
+.tp-btn-13,
+.tp-btn-14,
+.tp-btn-15,
+.tp-btn-16,
+.tp-btn-17,
+.tp-btn-18,
+.tp-btn-19,
+.tp-btn-20,
+.tp-btn-21,
+.tp-btn-22,
+.tp-btn-23,
+.tp-btn-24,
+.tp-btn-25,
+.tp-btn-26,
+.tp-btn-27,
+.tp-btn-28,
+.tp-btn-29,
+.tp-btn-30,
+.tp-btn-31,
+.tp-btn-32,
+.tp-btn-33,
+.tp-btn-34,
+.tp-btn-35,
+.tp-btn-36,
+.tp-btn-37,
+.tp-btn-38,
+.tp-btn-39,
+.tp-btn-40,
+.tp-btn-41,
+.tp-btn-42,
+.tp-btn-43,
+.tp-btn-44,
+.tp-btn-45,
+.tp-btn-46,
+.tp-btn-47,
+.tp-btn-48,
+.tp-btn-49,
+.tp-btn-50,
+.tp-btn-51,
+.tp-btn-52,
+.tp-btn-53,
+.tp-btn-54,
+.tp-btn-55,
+.tp-btn-56,
+.tp-btn-57,
+.tp-btn-58,
+.tp-btn-59,
+.tp-btn-60,
+.tp-btn-61,
+.tp-btn-62,
+.tp-btn-63,
+.tp-btn-64,
+.tp-btn-65,
+.tp-btn-66,
+.tp-btn-67,
+.tp-btn-68,
+.tp-btn-69,
+.tp-btn-70,
+.tp-btn-71,
+.tp-btn-72,
+.tp-btn-73,
+.tp-btn-74,
+.tp-btn-75,
+.tp-btn-76,
+.tp-btn-77,
+.tp-btn-78,
+.tp-btn-79,
+.tp-btn-80,
+.tp-btn-81,
+.tp-btn-82,
+.tp-btn-83,
+.tp-btn-84,
+.tp-btn-85,
+.tp-btn-86,
+.tp-btn-87,
+.tp-btn-88,
+.tp-btn-89,
+.tp-btn-90,
+.tp-btn-91,
+.tp-btn-92,
+.tp-btn-93,
+.tp-btn-94,
+.tp-btn-95,
+.tp-btn-96,
+.tp-btn-97,
+.tp-btn-98,
+.tp-btn-99,
+.tp-btn-100 {
+    background-color: #068953 !important;
+    color: #FFFFFF !important;
+    border-color: #068953 !important;
+}
+
+.tp-btn-border:hover,
+.tp-btn:hover,
+.tp-btn-2:hover,
+.tp-btn-3:hover,
+.tp-btn-4:hover,
+.tp-btn-5:hover,
+.tp-btn-6:hover,
+.tp-btn-7:hover,
+.tp-btn-8:hover,
+.tp-btn-9:hover,
+.tp-btn-10:hover,
+.tp-btn-11:hover,
+.tp-btn-12:hover,
+.tp-btn-13:hover,
+.tp-btn-14:hover,
+.tp-btn-15:hover,
+.tp-btn-16:hover,
+.tp-btn-17:hover,
+.tp-btn-18:hover,
+.tp-btn-19:hover,
+.tp-btn-20:hover,
+.tp-btn-21:hover,
+.tp-btn-22:hover,
+.tp-btn-23:hover,
+.tp-btn-24:hover,
+.tp-btn-25:hover,
+.tp-btn-26:hover,
+.tp-btn-27:hover,
+.tp-btn-28:hover,
+.tp-btn-29:hover,
+.tp-btn-30:hover,
+.tp-btn-31:hover,
+.tp-btn-32:hover,
+.tp-btn-33:hover,
+.tp-btn-34:hover,
+.tp-btn-35:hover,
+.tp-btn-36:hover,
+.tp-btn-37:hover,
+.tp-btn-38:hover,
+.tp-btn-39:hover,
+.tp-btn-40:hover,
+.tp-btn-41:hover,
+.tp-btn-42:hover,
+.tp-btn-43:hover,
+.tp-btn-44:hover,
+.tp-btn-45:hover,
+.tp-btn-46:hover,
+.tp-btn-47:hover,
+.tp-btn-48:hover,
+.tp-btn-49:hover,
+.tp-btn-50:hover,
+.tp-btn-51:hover,
+.tp-btn-52:hover,
+.tp-btn-53:hover,
+.tp-btn-54:hover,
+.tp-btn-55:hover,
+.tp-btn-56:hover,
+.tp-btn-57:hover,
+.tp-btn-58:hover,
+.tp-btn-59:hover,
+.tp-btn-60:hover,
+.tp-btn-61:hover,
+.tp-btn-62:hover,
+.tp-btn-63:hover,
+.tp-btn-64:hover,
+.tp-btn-65:hover,
+.tp-btn-66:hover,
+.tp-btn-67:hover,
+.tp-btn-68:hover,
+.tp-btn-69:hover,
+.tp-btn-70:hover,
+.tp-btn-71:hover,
+.tp-btn-72:hover,
+.tp-btn-73:hover,
+.tp-btn-74:hover,
+.tp-btn-75:hover,
+.tp-btn-76:hover,
+.tp-btn-77:hover,
+.tp-btn-78:hover,
+.tp-btn-79:hover,
+.tp-btn-80:hover,
+.tp-btn-81:hover,
+.tp-btn-82:hover,
+.tp-btn-83:hover,
+.tp-btn-84:hover,
+.tp-btn-85:hover,
+.tp-btn-86:hover,
+.tp-btn-87:hover,
+.tp-btn-88:hover,
+.tp-btn-89:hover,
+.tp-btn-90:hover,
+.tp-btn-91:hover,
+.tp-btn-92:hover,
+.tp-btn-93:hover,
+.tp-btn-94:hover,
+.tp-btn-95:hover,
+.tp-btn-96:hover,
+.tp-btn-97:hover,
+.tp-btn-98:hover,
+.tp-btn-99:hover,
+.tp-btn-100:hover {
+    background-color: #0a57a4 !important;
+    color: #FFFFFF !important;
+    border-color: #0a57a4 !important;
+}
+
+/* Secondary color elements */
+.tp-btn-border-2,
+.tp-btn-outline,
+.tp-btn-outline-2,
+.tp-btn-outline-3,
+.tp-btn-outline-4,
+.tp-btn-outline-5,
+.tp-btn-outline-6,
+.tp-btn-outline-7,
+.tp-btn-outline-8,
+.tp-btn-outline-9,
+.tp-btn-outline-10 {
+    background-color: transparent !important;
+    color: #0a57a4 !important;
+    border-color: #0a57a4 !important;
+}
+
+.tp-btn-border-2:hover,
+.tp-btn-outline:hover,
+.tp-btn-outline-2:hover,
+.tp-btn-outline-3:hover,
+.tp-btn-outline-4:hover,
+.tp-btn-outline-5:hover,
+.tp-btn-outline-6:hover,
+.tp-btn-outline-7:hover,
+.tp-btn-outline-8:hover,
+.tp-btn-outline-9:hover,
+.tp-btn-outline-10:hover {
+    background-color: #0a57a4 !important;
+    color: #FFFFFF !important;
+    border-color: #0a57a4 !important;
+}
+
+/* Links */
+a {
+    color: #068953 !important;
+}
+
+a:hover {
+    color: #0a57a4 !important;
+}
+
+/* Navigation and menu items */
+.tp-header-2-bar,
+.tp-offcanvas-open-btn,
+.tp-mobile-menu-active a,
+.tp-submenu a {
+    color: #068953 !important;
+}
+
+.tp-header-2-bar:hover,
+.tp-offcanvas-open-btn:hover,
+.tp-mobile-menu-active a:hover,
+.tp-submenu a:hover {
+    color: #0a57a4 !important;
+}
+
+/* Text colors */
+.tp-hero-2-subtitle,
+.tp-hero-2-title,
+.tp-hero-2-avater-content h4,
+.tp-hero-2-avater-content span,
+.tp-service-2-title,
+.tp-service-2-text,
+.tp-portfolio-2-title,
+.tp-portfolio-2-text,
+.tp-testimonial-2-text,
+.tp-testimonial-2-author,
+.tp-brand-2-title,
+.tp-cta-2-title,
+.tp-cta-2-text,
+.tp-footer-2-text,
+.tp-footer-2-title {
+    color: #141414 !important;
+}
+
+/* Background elements that should be white */
+.tp-hero-2-area.include-bg {
+    background-color: #FFFFFF !important;
+}
+
+/* Remove any dark backgrounds */
+.black-bg-4,
+.black-bg-3,
+.black-bg-2,
+.black-bg-1,
+.dark-bg,
+.dark-bg-2,
+.dark-bg-3,
+.dark-bg-4 {
+    background-color: #FFFFFF !important;
+}
+
+/* Ensure all containers have white background */
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    background-color: #FFFFFF !important;
+}
+
+/* Override any gradient backgrounds */
+[style*="background: linear-gradient"],
+[style*="background:radial-gradient"],
+[style*="background-image"] {
+    background: #FFFFFF !important;
+}
+
+/* Ensure text is readable on white background */
+.tp-hero-2-subtitle,
+.tp-hero-2-title,
+.tp-service-2-title,
+.tp-portfolio-2-title,
+.tp-testimonial-2-text,
+.tp-brand-2-title,
+.tp-cta-2-title,
+.tp-footer-2-title,
+h1, h2, h3, h4, h5, h6,
+p, span, div {
+    color: #141414 !important;
+}
+
+/* Special handling for white text that needs to be dark */
+.tp-line-white,
+.tp-offcanvas-2-right-info-item a,
+.tp-offcanvas-2-right-info-title {
+    color: #141414 !important;
+}
+
+/* Ensure all sections have white background */
+section,
+.section,
+.tp-section,
+.tp-area,
+.tp-wrapper {
+    background-color: #FFFFFF !important;
+}
+
+/* Override any existing color classes */
+.text-white {
+    color: #141414 !important;
+}
+
+.bg-dark,
+.bg-black {
+    background-color: #FFFFFF !important;
+}
+
+/* Ensure buttons maintain proper contrast */
+.tp-btn-border,
+.tp-btn {
+    color: #FFFFFF !important;
+}
+
+/* Override any existing hover states */
+*:hover {
+    background-color: inherit !important;
+}
+
+/* Ensure proper contrast for accessibility */
+.tp-hero-2-content,
+.tp-service-2-content,
+.tp-portfolio-2-content,
+.tp-testimonial-2-content,
+.tp-brand-2-content,
+.tp-cta-2-content,
+.tp-footer-2-content {
+    color: #141414 !important;
+} 
