@@ -52,6 +52,80 @@
     }
     </style>
 
+    <style>
+    /* Loading Screen Styles */
+    .loading-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #068953, #0a57a4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+    }
+    
+    .loading-screen.hidden {
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .loading-content {
+        text-align: center;
+        color: white;
+    }
+    
+    .loading-logo {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        animation: logo-pulse 2s ease-in-out infinite;
+    }
+    
+    @keyframes logo-pulse {
+        0%, 100% {
+            transform: scale(1);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        50% {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+    }
+    
+    .loading-spinner {
+        width: 40px;
+        height: 40px;
+        border: 3px solid rgba(255,255,255,0.3);
+        border-top: 3px solid white;
+        border-radius: 50%;
+        margin: 20px auto;
+        animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    
+    .loading-text {
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 15px;
+        opacity: 0.9;
+        animation: text-fade 2s ease-in-out infinite;
+    }
+    
+    @keyframes text-fade {
+        0%, 100% { opacity: 0.9; }
+        50% { opacity: 0.6; }
+    }
+</style>
 </head>
 
 <body class="tp-magic-cursor white-bg">
@@ -64,14 +138,16 @@
 
     <!-- preloader -->
 
-    <!-- preloader -->
-    <div id="preloader">
-        <div class="preloader">
-            <span></span>
-            <span></span>
+    
+    <!-- Loading Screen avec Logo TMC -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <img src="Assetstmc/tmclogo/toglogo.jpg" alt="TMC Logo" class="loading-logo">
+            <div class="loading-spinner"></div>
+            <p class="loading-text">Chargement...</p>
         </div>
     </div>
-    <!-- preloader end  -->
+
     <!-- preloader end  -->
 
     <!-- back to top start -->
@@ -275,7 +351,7 @@
                                         <div class="col-xl-6">
                                             <div class="tp-pd-3-overview-info mb-40">
                                                 <span>Date</span>
-                                                <h4>Juillet 2025</h4>
+                                                <h4>Août 2025</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -518,7 +594,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                         <div class="col-xl-6">
                                             <div class="tp-pd-3-overview-info mb-40">
                                                 <span>Date</span>
-                                                <h4>Juillet 2025</h4>
+                                                <h4>Août 2025</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -726,7 +802,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                         <div class="col-xl-6">
                                             <div class="tp-pd-3-overview-info mb-40">
                                                 <span>Date</span>
-                                                <h4>Juillet 2025</h4>
+                                                <h4>Août 2025</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -744,19 +820,19 @@ document.addEventListener('DOMContentLoaded', function () {
                         <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect">
                         <img data-speed=".8" src="Assetstmc\Detailprod\PierretailléeMixte.png" alt="">
                         </div>
-                        <h1 class="product-title">Pierre Taillée Mixte</h1>
+                        <h1 class="product-title">Pierres Taillées Mixte</h1>
                     </div>
                     <div class="col-lg-4">
                         <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect">
                         <img data-speed=".8" src="Assetstmc\Detailprod\pierrepréfabriqué.png" alt="">
                         </div>
-                        <h1 class="product-title">Pierre Préfabriqué</h1>
+                        <h1 class="product-title">Pierres Préfabriqué</h1>
                     </div>
                     <div class="col-lg-4">
                         <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect">
                         <img data-speed=".8" src="Assetstmc\Detailprod\pierrepolie.png" alt="">
                         </div>
-                        <h1 class="product-title">Pierre Polie</h1>
+                        <h1 class="product-title">Pierres Polie</h1>
                     </div>
 
                     <div class="gallery-container mt-40">
@@ -934,7 +1010,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <div class="col-xl-6">
                             <div class="tp-pd-3-overview-info mb-40">
                                 <span>Date</span>
-                                <h4>Juillet 2025</h4>
+                                <h4>Août 2025</h4>
                             </div>
                         </div>
                     </div>
@@ -1141,7 +1217,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <div class="col-xl-6">
                             <div class="tp-pd-3-overview-info mb-40">
                                 <span>Date</span>
-                                <h4>Juillet 2025</h4>
+                                <h4>Août 2025</h4>
                             </div>
                         </div>
                     </div>
@@ -1306,7 +1382,7 @@ document.addEventListener('DOMContentLoaded', function () {
             </main>
 
 
-                        <footer>
+            <footer>
 
                 <!-- footer area start -->
                 <div class="des-footer-wrap pb-15">
@@ -1326,12 +1402,12 @@ document.addEventListener('DOMContentLoaded', function () {
                             <div class="des-footer-bottom d-flex align-items-center justify-content-between">
                                 <span>TMC Mining & Produits</span>
                                 <div class="des-footer-bottom-social text-center">
-                                    <a href="#">Tiktok</a>
-                                    <a href="#">Instagram</a>
-                                    <a href="#">Facebook</a>
-                                    <a href="#">Youtube</a>
+                                    <a href="https://www.tiktok.com/@togunamining?is_from_webapp=1&sender_device=pc" target="_blank">Tiktok</a>
+                                    <a href="https://www.instagram.com/mtoguna?utm_source=ig_web_button_share_sheet&igsh=NGUwOWZidGE3OXhu" target="_blank">Instagram</a>
+                                    <a href="https://www.facebook.com/share/1GqZebvYbv/?mibextid=wwXIfr" target="_blank">Facebook</a>
+                                    <a href="https://youtube.com/@togunamining-corp?si=p4G_PjlKexDzstfh" target="_blank">Youtube</a>
                                 </div>
-                                <span>© 2025 GDA Corporate</span>
+                                <span>© 2025 GDA Corporate   </span>
                             </div>
                         </div>
                     </div>
@@ -1383,6 +1459,44 @@ document.addEventListener('DOMContentLoaded', function () {
 
     <!-- JS here -->
     <!-- JS here -->
+
+
+    <!-- Script pour l'écran de chargement -->
+    <script>
+        // Gestion de l'écran de chargement
+        document.addEventListener('DOMContentLoaded', function() {
+            const loadingScreen = document.getElementById('loading-screen');
+            
+            // Masquer l'écran de chargement après 2 secondes
+            setTimeout(function() {
+                loadingScreen.classList.add('hidden');
+                
+                // Supprimer complètement l'élément après l'animation
+                setTimeout(function() {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }, 2000);
+            
+            // Masquer immédiatement si la page est déjà chargée
+            if (document.readyState === 'complete') {
+                loadingScreen.classList.add('hidden');
+                setTimeout(function() {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }
+        });
+        
+        // Masquer l'écran de chargement quand la page est complètement chargée
+        window.addEventListener('load', function() {
+            const loadingScreen = document.getElementById('loading-screen');
+            if (loadingScreen && !loadingScreen.classList.contains('hidden')) {
+                loadingScreen.classList.add('hidden');
+                setTimeout(function() {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }
+        });
+    </script>
 
 </body>
 

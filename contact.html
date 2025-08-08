@@ -9,10 +9,11 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta name="description" content="Elevate your online presence with Crafto - a modern, versatile, multipurpose Bootstrap 5 responsive HTML5, SCSS template using highly creative 52+ ready demos.">
         <!-- favicon icon -->
-        <link rel="shortcut icon" href="images/favicon.png">
-        <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        <link rel="shortcut icon" href="Assetstmc/tmclogo/toglogo.jpg">
+        <link rel="icon" type="image/jpeg" href="Assetstmc/tmclogo/toglogo.jpg">
+        <link rel="apple-touch-icon" href="Assetstmc/tmclogo/toglogo.jpg">
+        <link rel="apple-touch-icon" sizes="72x72" href="Assetstmc/tmclogo/toglogo.jpg">
+        <link rel="apple-touch-icon" sizes="114x114" href="Assetstmc/tmclogo/toglogo.jpg">
         <!-- google fonts preconnect -->
         <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -25,9 +26,104 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
 
+        <!-- CSS pour masquer le bouton "52+ Pre-built sites" -->
+        <style>
+            /* Masquer le bouton "52+ Pre-built sites" sur cette page */
+            .theme-demos {
+                display: none !important;
+            }
+            
+            /* Alternative : masquer seulement le bouton "all-demo" */
+            .all-demo {
+                display: none !important;
+            }
+            
+            /* Loading Screen Styles */
+            .loading-screen {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(135deg, #068953, #0a57a4);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 9999;
+                transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+            }
+            
+            .loading-screen.hidden {
+                opacity: 0;
+                visibility: hidden;
+            }
+            
+            .loading-content {
+                text-align: center;
+                color: white;
+            }
+            
+            .loading-logo {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                margin-bottom: 20px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+                animation: logo-pulse 2s ease-in-out infinite;
+            }
+            
+            @keyframes logo-pulse {
+                0%, 100% {
+                    transform: scale(1);
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+                }
+                50% {
+                    transform: scale(1.05);
+                    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+                }
+            }
+            
+            .loading-spinner {
+                width: 40px;
+                height: 40px;
+                border: 3px solid rgba(255,255,255,0.3);
+                border-top: 3px solid white;
+                border-radius: 50%;
+                margin: 20px auto;
+                animation: spin 1s linear infinite;
+            }
+            
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+            
+            .loading-text {
+                font-size: 18px;
+                font-weight: 600;
+                margin-top: 15px;
+                opacity: 0.9;
+                animation: text-fade 2s ease-in-out infinite;
+            }
+            
+            @keyframes text-fade {
+                0%, 100% { opacity: 0.9; }
+                50% { opacity: 0.6; }
+            }
+        </style>
+
     </head>
 
     <body data-mobile-nav-trigger-alignment="right" data-mobile-nav-style="modern" data-mobile-nav-bg-color="#1d1d1d">
+        <!-- Loading Screen avec Logo TMC -->
+        <div id="loading-screen" class="loading-screen">
+            <div class="loading-content">
+                <img src="Assetstmc/tmclogo/toglogo.jpg" alt="TMC Logo" class="loading-logo">
+                <div class="loading-spinner"></div>
+                <p class="loading-text">Chargement...</p>
+            </div>
+        </div>
+
         <!-- start header -->
 <header>
     <!-- start navigation -->
@@ -163,26 +259,23 @@
                         <span class="fs-30 alt-font ls-minus-05px fw-700 text-toguna-gradient">Bamako</span>
                         <div class="location-badge-toguna mt-10px">Siège Social</div>
                     </div>
-                                         <p class="w-70 mb-20px lg-w-90 text-center mx-auto">J368+43X, Bamako</p>
+                                         <p class="w-70 mb-20px lg-w-90 text-center mx-auto">Route de senou, Zone Aéroportuaire</p>
                     <div class="separator-line-1px bg-toguna-gradient w-70 mt-20px mb-20px md-w-100 mx-auto"></div>
                     
                     <div class="contact-item-toguna mb-15px">
-                        <div class="contact-icon-toguna">
-                            <i class="feather icon-feather-mail fs-16 text-white"></i>
-                        </div>
                         <div>
-                            <span class="text-dark-gray fw-600">E:</span>
-                            <a href="mailto:contact@tmc-entreprise.com" class="text-toguna-blue">contact@tmc-entreprise.com</a>
+                            <span class="text-dark-gray fw-600">Email:</span>
+                            <a href="mailto:groupetoguna@groupetoguna.com" class="text-toguna-blue">groupetoguna@groupetoguna.com</a>
                         </div>
                     </div>
                     
                     <div class="contact-item-toguna mb-20px">
-                        <div class="contact-icon-toguna">
-                            <i class="feather icon-feather-phone fs-16 text-white"></i>
-                        </div>
                         <div>
-                            <span class="text-dark-gray fw-600">T:</span>
-                            <a href="tel:+22320202020" class="text-toguna-blue">+223 20 20 20 20</a>
+                            <span class="text-dark-gray fw-600">Tel:</span>
+                            <a href="tel:+22344979410" class="text-toguna-blue">+223 44 97 94 10</a> <br>
+                            <a href="tel:+22384639310" class="text-toguna-blue">+223 84 63 93 10</a> <br>
+                            <a href="tel:+22390559141" class="text-toguna-blue">+223 90 55 91 41</a> <br>
+                            <a href="tel:+22394395046" class="text-toguna-blue">+223 94 39 50 46</a>
                         </div>
                     </div>
                     
@@ -1054,5 +1147,42 @@ setTimeout(createServiceParticles, 2000);
         <script type="text/javascript" src="js/vendors.min.js"></script>
         <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXbrQhbrrdjSTVaPzJeILiZP_asMgUIrw&callback=initMap"></script>
         <script type="text/javascript" src="js/main.js"></script>
+        
+        <!-- Script pour l'écran de chargement -->
+        <script>
+            // Gestion de l'écran de chargement
+            document.addEventListener('DOMContentLoaded', function() {
+                const loadingScreen = document.getElementById('loading-screen');
+                
+                // Masquer l'écran de chargement après 2 secondes
+                setTimeout(function() {
+                    loadingScreen.classList.add('hidden');
+                    
+                    // Supprimer complètement l'élément après l'animation
+                    setTimeout(function() {
+                        loadingScreen.style.display = 'none';
+                    }, 500);
+                }, 2000);
+                
+                // Masquer immédiatement si la page est déjà chargée
+                if (document.readyState === 'complete') {
+                    loadingScreen.classList.add('hidden');
+                    setTimeout(function() {
+                        loadingScreen.style.display = 'none';
+                    }, 500);
+                }
+            });
+            
+            // Masquer l'écran de chargement quand la page est complètement chargée
+            window.addEventListener('load', function() {
+                const loadingScreen = document.getElementById('loading-screen');
+                if (loadingScreen && !loadingScreen.classList.contains('hidden')) {
+                    loadingScreen.classList.add('hidden');
+                    setTimeout(function() {
+                        loadingScreen.style.display = 'none';
+                    }, 500);
+                }
+            });
+        </script>
     </body>
 </html>

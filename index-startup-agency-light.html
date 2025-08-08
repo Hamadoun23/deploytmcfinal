@@ -32,6 +32,80 @@
     <!-- CSS here -->
     <!-- CSS here -->
 
+    <style>
+    /* Loading Screen Styles */
+    .loading-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #068953, #0a57a4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+    }
+    
+    .loading-screen.hidden {
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .loading-content {
+        text-align: center;
+        color: white;
+    }
+    
+    .loading-logo {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        animation: logo-pulse 2s ease-in-out infinite;
+    }
+    
+    @keyframes logo-pulse {
+        0%, 100% {
+            transform: scale(1);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        50% {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+    }
+    
+    .loading-spinner {
+        width: 40px;
+        height: 40px;
+        border: 3px solid rgba(255,255,255,0.3);
+        border-top: 3px solid white;
+        border-radius: 50%;
+        margin: 20px auto;
+        animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    
+    .loading-text {
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 15px;
+        opacity: 0.9;
+        animation: text-fade 2s ease-in-out infinite;
+    }
+    
+    @keyframes text-fade {
+        0%, 100% { opacity: 0.9; }
+        50% { opacity: 0.6; }
+    }
+</style>
 </head>
 
 <body class="tp-magic-cursor" data-bg-color="#F5EFEA">
@@ -44,14 +118,16 @@
 
     <!-- preloader -->
 
-    <!-- preloader -->
-    <div id="preloader">
-        <div class="preloader">
-            <span></span>
-            <span></span>
+    
+    <!-- Loading Screen avec Logo TMC -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <img src="Assetstmc/tmclogo/toglogo.jpg" alt="TMC Logo" class="loading-logo">
+            <div class="loading-spinner"></div>
+            <p class="loading-text">Chargement...</p>
         </div>
     </div>
-    <!-- preloader end  -->
+
     <!-- preloader end  -->
 
     <!-- back to top start -->
@@ -465,10 +541,10 @@
                                 <div class="col-lg-6">
                                     <div class="st-service-item-wrap d-flex align-items-center">
                                         <div class="st-service-item-thumb">
-                                            <a href="portfolio-details-creative-slider-light.html"><img src="Assetstmc\Galleriemedia\tmckabaroda2.jpg" alt=""></a>
+                                            <a href="https://youtu.be/SAckKQEE_jc?si=zGXKiFBw4W1SJjyz" target="_blank"><img src="Assetstmc\Galleriemedia\tmckabaroda2.jpg" alt=""></a>
                                         </div>
                                         <div class="st-service-item-text">
-                                            <h4 class="st-service-item-title"><a class="tp-line-white" href="portfolio-details-creative-slider-light.html" style="color: #068953;">Galets Décoratifs</a></h4>
+                                            <h4 class="st-service-item-title"><a class="tp-line-white" href="https://youtu.be/SAckKQEE_jc?si=zGXKiFBw4W1SJjyz" target="_blank" style="color: #068953;">TMC KA BARODA</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -499,17 +575,17 @@
                                 <div class="col-lg-6">
                                     <div class="st-service-item-wrap d-flex align-items-center">
                                         <div class="st-service-item-thumb">
-                                            <a href="https://youtu.be/MeHuH6-ZJSU?si=7K4kyjKyjhHCp1Ke" target="_blank"><img src="Assetstmc\Galleriemedia\tmckabaroda3.jpg" alt=""></a>
+                                            <a href="https://youtu.be/MeHuH6-ZJSU?si=DnsgEnAwS-YAGiDF" target="_blank"><img src="Assetstmc\Galleriemedia\tmckabaroda3.jpg" alt=""></a>
                                         </div>
                                         <div class="st-service-item-text">
-                                            <h4 class="st-service-item-title"><a class="tp-line-white" href="https://youtu.be/MeHuH6-ZJSU?si=7K4kyjKyjhHCp1Ke" target="_blank" style="color: #068953;">BARODA ÉMISSION</a></h4>
+                                            <h4 class="st-service-item-title"><a class="tp-line-white" href="https://youtu.be/MeHuH6-ZJSU?si=DnsgEnAwS-YAGiDF" target="_blank" style="color: #068953;">BARODA ÉMISSION</a></h4>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="st-service-item-wrapper p-relative fix">
                                         <div class="st-service-item-btn">
-                                            <a href="portfolio-details-creative-slider-light.html"><span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <a href="https://youtu.be/MeHuH6-ZJSU?si=DnsgEnAwS-YAGiDF" target="_blank"><span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M1 13L13 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                                         <path d="M1 1H13V13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                                     </svg></span>
@@ -555,7 +631,7 @@
                                         </a>
                                     </div>
                                     <div class="st-portfolio-item-content">
-                                        <h4 class="st-portfolio-item-title"><a href="https://vm.tiktok.com/ZMSv8xsCq/" target="_blank" style="color: #068953;">Graviers & Carrières</a></h4>
+                                        <h4 class="st-portfolio-item-title"><a href="https://vm.tiktok.com/ZMSv8xsCq/" target="_blank" style="color: #068953;">Pipi & Dôgônô</a></h4>
                                         <div class="st-portfolio-item-btn">
                                             <a class="tp-line-black" href="https://vm.tiktok.com/ZMSv8xsCq/" target="_blank" style="color: #0a57a4;">Voir le short vidéo <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
                                                         <path d="M1 7H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -573,7 +649,7 @@
                                         </a>
                                     </div>
                                     <div class="st-portfolio-item-content">
-                                        <h4 class="st-portfolio-item-title"><a href="https://vm.tiktok.com/ZMSv8HBvJ/" target="_blank" style="color: #068953;">Moments d'équipe</a></h4>
+                                        <h4 class="st-portfolio-item-title"><a href="https://vm.tiktok.com/ZMSv8HBvJ/" target="_blank" style="color: #068953;">Galets décoratifs</a></h4>
                                         <div class="st-portfolio-item-btn">
                                             <a class="tp-line-black" href="https://vm.tiktok.com/ZMSv8HBvJ/" target="_blank" style="color: #0a57a4;">Voir le short vidéo <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
                                                         <path d="M1 7H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -593,7 +669,7 @@
                                         </a>
                                     </div>
                                     <div class="st-portfolio-item-content">
-                                        <h4 class="st-portfolio-item-title"><a href="https://vm.tiktok.com/ZMSv8cSvL/" target="_blank" style="color: #068953;">Galets décoratifs</a></h4>
+                                        <h4 class="st-portfolio-item-title"><a href="https://vm.tiktok.com/ZMSv8cSvL/" target="_blank" style="color: #068953;">Pipi & Dôgônô</a></h4>
                                         <div class="st-portfolio-item-btn">
                                             <a class="tp-line-black" href="https://vm.tiktok.com/ZMSv8cSvL/" target="_blank" style="color: #0a57a4;">Voir le short vidéo <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
                                                         <path d="M1 7H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -606,14 +682,14 @@
                             <div class="offset-xl-3 col-xl-3 col-md-6">
                                 <div class="st-portfolio-item st-portfolio-item-5 z-index-1 mb-30">
                                     <div class="st-portfolio-item-thumb">
-                                        <a href="https://vm.tiktok.com/ZMSvLp15H/" target="_blank">
+                                        <a href="https://vm.tiktok.com/ZMSowFR76/" target="_blank">
                                             <img src="Assetstmc\Galleriemedia\réseauxsocio4.jpg" alt="">
                                         </a>
                                     </div>
                                     <div class="st-portfolio-item-content">
-                                        <h4 class="st-portfolio-item-title"><a href="https://vm.tiktok.com/ZMSvLp15H/" target="_blank" style="color: #068953;">TMC Ka Baroda</a></h4>
+                                        <h4 class="st-portfolio-item-title"><a href="https://vm.tiktok.com/ZMSowFR76/" target="_blank" style="color: #068953;">Le publi-reportage</a></h4>
                                         <div class="st-portfolio-item-btn">
-                                            <a class="tp-line-black" href="https://vm.tiktok.com/ZMSvLp15H/" target="_blank" style="color: #0a57a4;">Voir le short vidéo <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                            <a class="tp-line-black" href="https://vm.tiktok.com/ZMSowFR76/" target="_blank" style="color: #0a57a4;">Voir le short vidéo <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
                                                         <path d="M1 7H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                                                         <path d="M7 1L13 7L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                                                     </svg></span></a>
@@ -898,6 +974,44 @@
     <!-- JS here -->
 
     <!-- JS here -->
+
+
+    <!-- Script pour l'écran de chargement -->
+    <script>
+        // Gestion de l'écran de chargement
+        document.addEventListener('DOMContentLoaded', function() {
+            const loadingScreen = document.getElementById('loading-screen');
+            
+            // Masquer l'écran de chargement après 2 secondes
+            setTimeout(function() {
+                loadingScreen.classList.add('hidden');
+                
+                // Supprimer complètement l'élément après l'animation
+                setTimeout(function() {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }, 2000);
+            
+            // Masquer immédiatement si la page est déjà chargée
+            if (document.readyState === 'complete') {
+                loadingScreen.classList.add('hidden');
+                setTimeout(function() {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }
+        });
+        
+        // Masquer l'écran de chargement quand la page est complètement chargée
+        window.addEventListener('load', function() {
+            const loadingScreen = document.getElementById('loading-screen');
+            if (loadingScreen && !loadingScreen.classList.contains('hidden')) {
+                loadingScreen.classList.add('hidden');
+                setTimeout(function() {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }
+        });
+    </script>
 
 </body>
 
