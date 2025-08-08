@@ -171,6 +171,295 @@
         #header-sticky nav#mobile-menu ul li a:hover {
             color: #0a57a4; /* bleu au survol */
         }
+        
+        /* Style pour la navigation mobile - fond blanc et liens verts */
+        .offcanvas__content {
+            background-color: white !important;
+        }
+        
+        .mobile-menu {
+            background-color: white !important;
+        }
+        
+        .mobile-menu ul li a {
+            color: #068953 !important;
+            font-weight: 600 !important;
+            font-size: 16px !important;
+            padding: 12px 0 !important;
+            border-bottom: 1px solid rgba(6, 137, 83, 0.1) !important;
+            transition: all 0.3s ease !important;
+        }
+        
+        .mobile-menu ul li a:hover {
+            color: #0a57a4 !important;
+            background-color: rgba(6, 137, 83, 0.05) !important;
+            padding-left: 10px !important;
+        }
+        
+        .mobile-menu ul li {
+            border-bottom: 1px solid rgba(6, 137, 83, 0.1) !important;
+        }
+        
+        /* Footer - Police Blair */
+        .footer {
+            font-family: 'Blair', sans-serif !important;
+        }
+        
+        .footer h2,
+        .footer h3,
+        .footer h4,
+        .footer p,
+        .footer span,
+        .footer a {
+            font-family: 'Blair', sans-serif !important;
+        }
+        
+        /* Forcer la couleur bleue pour les titres du footer */
+        .footer h4[style*="color: #0a57a4"] {
+            color: #0a57a4 !important;
+        }
+        
+        .footer .footer__widget-title h4 {
+            color: #0a57a4 !important;
+        }
+        
+        .footer__link ul li a {
+            font-family: 'Blair', sans-serif !important;
+            transition: opacity 0.3s ease;
+        }
+        
+        .footer__link ul li a:hover {
+            opacity: 0.8;
+        }
+        
+        .footer__copyright p,
+        .footer__copyright a {
+            font-family: 'Blair', sans-serif !important;
+        }
+        
+        .footer__copyright-menu ul li a {
+            font-family: 'Blair', sans-serif !important;
+            transition: opacity 0.3s ease;
+        }
+        
+        .footer__copyright-menu ul li a:hover {
+            opacity: 0.8;
+        }
+        
+        .footer__info a {
+            font-family: 'Blair', sans-serif !important;
+        }
+        
+        .footer__subscribe input[type="email"] {
+            font-family: 'Blair', sans-serif !important;
+        }
+        
+        .footer__subscribe .form-check-label {
+            font-family: 'Blair', sans-serif !important;
+        }
+        
+        /* Footer Responsive */
+        @media (max-width: 768px) {
+            .footer__wrap {
+                text-align: center;
+            }
+            
+            .footer__widget {
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            
+            .footer__logo {
+                text-align: center;
+            }
+            
+            .footer__logo img {
+                max-width: 150px !important;
+                margin: 0 auto;
+                display: block;
+            }
+            
+            .footer__content {
+                text-align: center;
+            }
+            
+            .footer__info {
+                text-align: center;
+            }
+            
+            .footer__info a {
+                display: block;
+                margin-bottom: 8px;
+                text-align: center;
+            }
+            
+            .footer__link ul {
+                text-align: center;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .footer__link ul li {
+                margin-bottom: 10px;
+                text-align: center;
+                width: 100%;
+            }
+            
+            .footer__link ul li a {
+                text-align: center;
+                display: inline-block;
+            }
+            
+            .footer__widget-title {
+                text-align: center;
+            }
+            
+            .footer__widget-title h4 {
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .footer__wrap {
+                padding: 20px 0;
+            }
+            
+            .footer__widget {
+                margin-bottom: 25px;
+            }
+            
+            .footer__widget-title {
+                margin-bottom: 15px !important;
+            }
+            
+            .footer__logo img {
+                max-width: 120px !important;
+            }
+            
+            .footer__copyright {
+                text-align: center;
+                margin-bottom: 15px;
+            }
+            
+            .footer__copyright-menu {
+                text-align: center;
+            }
+            
+            .footer__copyright-menu ul {
+                justify-content: center;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+            
+            .footer__copyright-menu ul li {
+                margin: 0;
+            }
+        }
+        
+        .mobile-menu ul li:last-child {
+            border-bottom: none !important;
+        }
+        
+        /* Style pour le bouton de fermeture */
+        .offcanvas-close-icon {
+            color: #068953 !important;
+        }
+        
+        .offcanvas-m-line {
+            background-color: #068953 !important;
+        }
+        
+        /* Style pour le logo dans l'offcanvas */
+        .offcanvas__logo img {
+            max-height: 60px !important;
+        }
+        
+        /* Responsive pour mobile */
+        @media (max-width: 768px) {
+            .mobile-menu ul li a {
+                font-size: 18px !important;
+                padding: 15px 0 !important;
+            }
+            
+            .offcanvas__content {
+                padding: 20px !important;
+            }
+            
+            /* Header complet blanc sur mobile */
+            .header {
+                background-color: white !important;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+            }
+            
+            .header2__main {
+                background-color: white !important;
+            }
+            
+            .header__main {
+                background-color: white !important;
+            }
+            
+            /* Logo et navigation dans le header */
+            .header__logo img {
+                filter: none !important;
+            }
+            
+            .header__nav ul li a {
+                color: #068953 !important;
+                font-weight: 600 !important;
+            }
+            
+            .header__nav ul li a:hover {
+                color: #0a57a4 !important;
+            }
+            
+            /* Bouton menu hamburger */
+            .header__bar {
+                color: #068953 !important;
+            }
+            
+            .header__bar span {
+                background-color: #068953 !important;
+            }
+            
+            /* Overlay de l'offcanvas */
+            .offcanvas__overlay {
+                background-color: white !important;
+                opacity: 0.95 !important;
+            }
+            
+            /* Contenu de l'offcanvas complètement blanc */
+            .offcanvas__wrapper {
+                background-color: white !important;
+            }
+            
+            .offcanvas__area {
+                background-color: white !important;
+            }
+            
+            /* S'assurer que tout le menu est blanc */
+            .offcanvas__content,
+            .mobile-menu,
+            .mobile-menu ul,
+            .mobile-menu ul li {
+                background-color: white !important;
+            }
+            
+            /* Style pour le bouton de fermeture */
+            .offcanvas-close-icon {
+                background-color: white !important;
+                color: #068953 !important;
+            }
+            
+            .offcanvas-m-line {
+                background-color: #068953 !important;
+            }
+        }
     </style>
 
     <div id="header-sticky" class="header header-2">
@@ -206,6 +495,9 @@
                                         <li>
                                             <a href="index-startup-agency-light.html">Galerie Média</a>
                                         </li>
+                                        <li>
+                                            <a href="contact.html">Contact</a>
+                                        </li>
                                     </ul>
                                 </nav>
                             </div>
@@ -213,9 +505,6 @@
                     </div>
                     <div class="header__right header2__right">
                         <div class="header__action d-flex align-items-center">
-                            <div class="header__btn-wrap d-none d-sm-inline-flex">
-                                <a href="contact.html" class="title-btn rr-btn btn-transparent"><span><i class="fa-regular fa-arrow-right"></i></span>Contact</a>
-                            </div>
                             <div class="header__hamburger ml-20 d-xl-none">
                                 <div class="sidebar__toggle">
                                     <button class="bar-icon">
@@ -533,6 +822,104 @@
             
 
         </main>
+        
+        <!-- Footer area start -->
+        <footer>
+            <section class="footer heading-bg overflow-hidden p-relative z-1">
+                <div class="container">
+                    <div class="footer-top">
+                        <div class="footer-top-footer-title hero">
+                            <h4 class="top-title _split_text">Construisons</h4>
+                            <p class="dec rr_title_anim">Ensemble, créons des solutions innovantes <br> pour l'avenir de votre entreprise avec <br> notre expertise en développement.</p>
+                        </div>
+                        <div class="hero"> 
+                            <h2 class="title _split_text">Votre Avenir.</h2>
+                        </div>
+                    </div>
+                    <div class="row footer__wrap p-relative">
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <div class="footer__widget">
+                                <div class="footer__logo mb-20">
+                                    <a href="index.html">
+                                        <img src="Assetstmc\tmclogo\tmclogo-white.png" alt="TMC Logo" style="max-width: 300px; height: auto;">
+                                    </a>
+                                </div>
+                                <div class="footer__content mb-20">
+                                    <p class="dec">
+                                        <a href="https://www.google.com/maps/dir//DIRECTION+GENERALE+GROUPE+TOGUNA+H3C5%2B2CJ+Bamako+Mali/@12.5700855,-7.9414701,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0xe51d1c2274a325f:0x2136a180fb2da0fc!2m2!1d-7.941452!2d12.5700875?entry=ttu&g_ep=EgoyMDI1MDgwNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">
+                                            Route de senou, Zone Aéroportuaire <br> Bamako, Mali
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="footer__info">
+                                    <a href="tel:+22344979410" style="background: #0a57a4; color: white; padding: 8px 12px; border-radius: 5px; text-decoration: none; margin: 0 5px 8px 0; display: inline-block; transition: opacity 0.3s ease;">+223 44 97 94 10</a>
+                                    <a href="tel:+22384639310" style="background: #0a57a4; color: white; padding: 8px 12px; border-radius: 5px; text-decoration: none; margin: 0 5px 8px 0; display: inline-block; transition: opacity 0.3s ease;">+223 84 63 93 10</a>
+                                    <a href="tel:+22390559141" style="background: #0a57a4; color: white; padding: 8px 12px; border-radius: 5px; text-decoration: none; margin: 0 5px 8px 0; display: inline-block; transition: opacity 0.3s ease;">+223 90 55 91 41</a>
+                                    <a href="tel:+22394395046" style="background: #0a57a4; color: white; padding: 8px 12px; border-radius: 5px; text-decoration: none; margin: 0 5px 8px 0; display: inline-block; transition: opacity 0.3s ease;">+223 94 39 50 46</a>
+                                    <a href="mailto:groupetoguna@groupetoguna.com" style="background: #0a57a4; color: white; padding: 8px 12px; border-radius: 5px; text-decoration: none; margin: 0 5px 8px 0; display: inline-block; transition: opacity 0.3s ease;">groupetoguna@groupetoguna.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                            <div class="footer__widget">
+                                <div class="footer__widget-title mb-25">
+                                    <h4 style="color: #0a57a4;">Produits</h4>
+                                </div>
+                                <div class="footer__link">
+                                    <ul>
+                                        <li><a href="portfolio-details-creative-slider-light.html"><i class="fa-solid fa-period"></i> Galets Décoratifs</a></li>
+                                        <li><a href="portfolio-details-creative-slider-light.html"><i class="fa-solid fa-period"></i> Calcaire</a></li>
+                                        <li><a href="portfolio-details-creative-slider-light.html"><i class="fa-solid fa-period"></i> Dolérites</a></li>
+                                        <li><a href="portfolio-details-creative-slider-light.html"><i class="fa-solid fa-period"></i> Pierres Taillées</a></li>
+                                        <li><a href="portfolio-details-creative-slider-light.html"><i class="fa-solid fa-period"></i> Graviers</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                            <div class="footer__widget">
+                                <div class="footer__widget-title mb-25">
+                                    <h4 style="color: #0a57a4;">Support</h4>
+                                </div>
+                                <div class="footer__link">
+                                    <ul>
+                                        <li><a href="about.html"><i class="fa-solid fa-period"></i> À propos</a></li>
+                                        <li><a href="contact.html"><i class="fa-solid fa-period"></i> Contact</a></li>
+                                        <li><a href="portfolio-creative-thumb-slider.html"><i class="fa-solid fa-period"></i> Nos Produits</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-12 col-sm-12 mb-4">
+                            <div class="footer__widget">
+                                <div class="footer__widget-title mb-25">
+                                    <h4 style="color: #0a57a4;">À propos de TMC</h4>
+                                </div>
+                                <p class="dec">Toguna Mining Corporation est leader dans l'extraction et la transformation de matériaux de construction au Mali. Notre expertise garantit des produits de qualité pour vos projets.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer__bottom-wrapper">
+                    <div class="container">
+                        <div class="footer__bottom">
+                            <div class="footer__copyright">
+                                <p>© 2025 GDA Corporate.</p>
+                            </div>
+                            <div class="footer__copyright-menu">
+                                <ul>
+                                    <li><a href="https://www.tiktok.com/@togunamining?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener" style="background: #000000; color: white; padding: 8px 12px; border-radius: 5px; text-decoration: none; margin: 0 5px; display: inline-block; transition: opacity 0.3s ease;">Tiktok</a></li> 
+                                    <li><a href="https://www.instagram.com/mtoguna?utm_source=ig_web_button_share_sheet&igsh=NGUwOWZidGE3OXhu" target="_blank" rel="noopener" style="background: #E4405F; color: white; padding: 8px 12px; border-radius: 5px; text-decoration: none; margin: 0 5px; display: inline-block; transition: opacity 0.3s ease;">Instagram</a></li> 
+                                    <li><a href="https://www.facebook.com/share/1GqZebvYbv/?mibextid=wwXIfr" target="_blank" rel="noopener" style="background: #1877F2; color: white; padding: 8px 12px; border-radius: 5px; text-decoration: none; margin: 0 5px; display: inline-block; transition: opacity 0.3s ease;">Facebook</a></li>
+                                    <li><a href="https://youtube.com/@togunamining-corp?si=p4G_PjlKexDzstfh" target="_blank" rel="noopener" style="background: #FF0000; color: white; padding: 8px 12px; border-radius: 5px; text-decoration: none; margin: 0 5px; display: inline-block; transition: opacity 0.3s ease;">Youtube</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
 
         
 

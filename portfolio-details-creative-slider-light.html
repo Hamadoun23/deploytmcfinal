@@ -50,6 +50,55 @@
     .tp-offcanvas-2-right-info-title {
         color: #0a57a4 !important;
     }
+    
+    /* Style pour le bouton menu sur mobile - couleur verte pour visibilité */
+    .tp-header-2-bar {
+        color: #068953 !important;
+        background-color: rgba(6, 137, 83, 0.1) !important;
+        border: 2px solid #068953 !important;
+        border-radius: 8px !important;
+        padding: 8px 16px !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    .tp-header-2-bar:hover {
+        background-color: #068953 !important;
+        color: white !important;
+        transform: translateY(-2px) !important;
+        box-shadow: 0 4px 12px rgba(6, 137, 83, 0.3) !important;
+    }
+    
+    /* Style pour les lignes du bouton hamburger */
+    .tp-header-2-bar span:last-child i {
+        background-color: #068953 !important;
+        height: 2px !important;
+        width: 20px !important;
+        display: block !important;
+        margin: 4px 0 !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    .tp-header-2-bar:hover span:last-child i {
+        background-color: white !important;
+    }
+    
+    /* Responsive pour mobile */
+    @media (max-width: 768px) {
+        .tp-header-2-bar {
+            font-weight: 600 !important;
+            font-size: 14px !important;
+            min-width: 80px !important;
+        }
+        
+        .tp-header-2-bar span:first-child {
+            color: #068953 !important;
+            font-weight: 600 !important;
+        }
+        
+        .tp-header-2-bar:hover span:first-child {
+            color: white !important;
+        }
+    }
     </style>
 
     <style>
@@ -611,20 +660,23 @@ document.addEventListener('DOMContentLoaded', function () {
                 <div class="container container-1800">
                     <div class="row gx-20">
                     <div class="col-lg-4">
-                        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect">
+                        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect product-box">
                         <img data-speed=".8" src="Assetstmc\Detailprod\calcaire0-5.png" alt="">
+                        <div class="price-tag">A partir de <br> 22 000 FCFA / T</div>
                         </div>
                         <h1 class="product-title">Calcaire  0/5</h1>
                     </div>
                     <div class="col-lg-4">
-                        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect">
+                        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect product-box">
                         <img data-speed=".8" src="Assetstmc\Detailprod\calcaire0-31,5.png" alt="">
+                        <div class="price-tag">A partir de <br> 24 000 FCFA / T</div>
                         </div>
                         <h1 class="product-title">Calcaire 0/31,5</h1>
                     </div>
                     <div class="col-lg-4">
-                        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect">
+                        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect product-box">
                         <img data-speed=".8" src="Assetstmc\Detailprod\calcaire5-15.png" alt="">
+                        <div class="price-tag">A partir de <br> 26 000 FCFA / T</div>
                         </div>
                         <h1 class="product-title">Calcaire 5/15</h1>
                     </div>
@@ -817,20 +869,23 @@ document.addEventListener('DOMContentLoaded', function () {
                 <div class="container container-1800">
                     <div class="row gx-20">
                     <div class="col-lg-4">
-                        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect">
+                        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect product-box">
                         <img data-speed=".8" src="Assetstmc\Detailprod\PierretailléeMixte.png" alt="">
+                        <div class="price-tag">A partir de <br> 35 000 FCFA / T</div>
                         </div>
                         <h1 class="product-title">Pierres Taillées Mixte</h1>
                     </div>
                     <div class="col-lg-4">
-                        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect">
+                        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect product-box">
                         <img data-speed=".8" src="Assetstmc\Detailprod\pierrepréfabriqué.png" alt="">
+                        <div class="price-tag">A partir de <br> 40 000 FCFA / T</div>
                         </div>
                         <h1 class="product-title">Pierres Préfabriqué</h1>
                     </div>
                     <div class="col-lg-4">
-                        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect">
+                        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect product-box">
                         <img data-speed=".8" src="Assetstmc\Detailprod\pierrepolie.png" alt="">
+                        <div class="price-tag">A partir de <br> 45 000 FCFA / T</div>
                         </div>
                         <h1 class="product-title">Pierres Polie</h1>
                     </div>
@@ -1026,20 +1081,23 @@ document.addEventListener('DOMContentLoaded', function () {
                 <div class="container container-1800">
                     <div class="row gx-20">
                     <div class="col-lg-4">
-                        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect">
+                        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect product-box">
                         <img data-speed=".8" src="Assetstmc\Detailprod\produitbadiangara.png" alt="">
+                        <div class="price-tag">A partir de <br> 28 000 FCFA / T</div>
                         </div>
                         <h1 class="product-title">Galet Bandiagara</h1>
                     </div>
                     <div class="col-lg-4">
-                        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect">
+                        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect product-box">
                         <img data-speed=".8" src="Assetstmc\Detailprod\produitcadregaletbasic.png" alt="">
+                        <div class="price-tag">A partir de <br> 30 000 FCFA / T</div>
                         </div>
                         <h1 class="product-title">Galet Basic</h1>
                     </div>
                     <div class="col-lg-4">
-                        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect">
+                        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect product-box">
                         <img data-speed=".8" src="Assetstmc\Detailprod\produitcadregaletgawa.png" alt="">
+                        <div class="price-tag">A partir de <br> 32 000 FCFA / T</div>
                         </div>
                         <h1 class="product-title">Galet Gawa</h1>
                     </div>
@@ -1232,8 +1290,9 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="container container-1800">
     <div class="row justify-content-center">
       <div class="col-lg-4">
-        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect text-center">
+        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect product-box text-center">
           <img data-speed=".8" src="Assetstmc/Detailprod/gravier mixte.png" alt="">
+          <div class="price-tag">A partir de <br> 20 000 FCFA / T</div>
         </div>
         <h1 class="product-title">gravier mixte</h1>
       </div>
