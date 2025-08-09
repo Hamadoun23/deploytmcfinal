@@ -694,72 +694,81 @@
                 <!-- brand area end -->
 
                 <!-- team area start -->
-                <div class="des-team-area pb-200">
+                    <div class="des-team-area pb-200">
+                    <style>
+                        .des-team-item {
+                        display: flex !important;
+                        align-items: center !important;
+                        justify-content: center !important; /* centre horizontalement */
+                        gap: 20px; /* espace entre nom et poste */
+                        text-align: center;
+                        }
+                    </style>
                     <div class="container container-1750">  
                         <div class="row">
-                            <div class="col-xl-12">
-                                <div class="des-team-wrap">
-                                    <div class="des-team-item-box active hover-reveal-item p-relative">
-                                            <div class="des-team-item d-flex align-items-center justify-content-between">
-                                                <span>Depuis 2016</span>
-                                                <h4 class="des-team-title">Aicha Nantoumé</h4>
-                                                <span>Directrice Géneral</span>
-                                            </div>
-                                        <div class="des-team-reveal-img" data-background="Assetstmc/accueil/directricegeneralerevu.jpg"></div>
-                                    </div>
-                                    <div class="des-team-item-box active hover-reveal-item p-relative">
-                                            <div class="des-team-item d-flex align-items-center justify-content-between">
-                                                <span>Depuis 2016</span>
-                                                <h4 class="des-team-title">Mme Camara</h4>
-                                                <span>Responsable Commercial</span>
-                                            </div>
-                                        <div class="des-team-reveal-img" data-background="Assetstmc/accueil/mmecamara.jpg"></div>
-                                    </div>
-                                    <div class="des-team-item-box active hover-reveal-item p-relative">
-                                            <div class="des-team-item d-flex align-items-center justify-content-between">
-                                                <span>Depuis 2016</span>
-                                                <h4 class="des-team-title">Mme Niamoye</h4>
-                                                <span>Agent Commercial</span>
-                                            </div>
-                                        <div class="des-team-reveal-img" data-background="Assetstmc/accueil/mmeniamoye.jpg"></div>
-                                    </div>
-                                    <div class="des-team-item-box active hover-reveal-item p-relative">
-                                            <div class="des-team-item d-flex align-items-center justify-content-between">
-                                                <span>Depuis 2016</span>
-                                                <h4 class="des-team-title">Abdoulaye Kodio</h4>
-                                                <span>Assistant Commercial</span>
-                                            </div>
-                                        <div class="des-team-reveal-img" data-background="Assetstmc/accueil/abdoulayekodio.jpg"></div>
-                                    </div>
-                                    <div class="des-team-item-box active hover-reveal-item p-relative">
-                                            <div class="des-team-item d-flex align-items-center justify-content-between">
-                                                <span>Depuis 2016</span>
-                                                <h4 class="des-team-title">Fanta Komota</h4>
-                                                <span>Assistante Commercial</span>
-                                            </div>
-                                        <div class="des-team-reveal-img" data-background="Assetstmc/accueil/fantakomota.jpg"></div>
-                                    </div>
-                                    <div class="des-team-item-box active hover-reveal-item p-relative">
-                                            <div class="des-team-item d-flex align-items-center justify-content-between">
-                                                <span>Depuis 2016</span>
-                                                <h4 class="des-team-title">Kadidia Nantoumé</h4>
-                                                <span>Caissière</span>
-                                            </div>
-                                        <div class="des-team-reveal-img" data-background="Assetstmc/accueil/kadidianantoume.jpg"></div>
-                                    </div>
-                                    <div class="des-team-item-box active hover-reveal-item p-relative">
-                                            <div class="des-team-item d-flex align-items-center justify-content-between">
-                                                <span>Depuis 2016</span>
-                                                <h4 class="des-team-title">Moussa Diallo</h4>
-                                                <span>Conseiller Commercial</span>
-                                            </div>
-                                        <div class="des-team-reveal-img" data-background="Assetstmc/accueil/moussadiallo.jpg"></div>
-                                    </div>
+                        <div class="col-xl-12">
+                            <div class="des-team-wrap">
+                            <div class="des-team-item-box active hover-reveal-item p-relative">
+                                <div class="des-team-item">
+                                <h4 class="des-team-title">Aicha Nantoumé</h4>
+                                <span>Directrice Générale</span>
                                 </div>
+                                <div class="des-team-reveal-img" data-background="Assetstmc/accueil/directricegeneralerevu.jpg"></div>
+                            </div>
+
+                            <div class="des-team-item-box active hover-reveal-item p-relative">
+                                <div class="des-team-item">
+                                <h4 class="des-team-title">Mme Camara Bintou</h4>
+                                <span>Responsable Commercial</span>
+                                </div>
+                                <div class="des-team-reveal-img" data-background="Assetstmc/accueil/mmecamara.jpg"></div>
+                            </div>
+
+                            <div class="des-team-item-box active hover-reveal-item p-relative">
+                                <div class="des-team-item">
+                                <h4 class="des-team-title">Mme Maiga Niamoye</h4>
+                                <span>Agent Commercial</span>
+                                </div>
+                                <div class="des-team-reveal-img" data-background="Assetstmc/accueil/mmeniamoye.jpg"></div>
+                            </div>
+
+                            <div class="des-team-item-box active hover-reveal-item p-relative">
+                                <div class="des-team-item">
+                                <h4 class="des-team-title">Abdoulaye Kodio</h4>
+                                <span>Assistant Commercial</span>
+                                </div>
+                                <div class="des-team-reveal-img" data-background="Assetstmc/accueil/abdoulayekodio.jpg"></div>
+                            </div>
+
+                            <div class="des-team-item-box active hover-reveal-item p-relative">
+                                <div class="des-team-item">
+                                <h4 class="des-team-title">Fanta Komota</h4>
+                                <span>Assistante Commercial</span>
+                                </div>
+                                <div class="des-team-reveal-img" data-background="Assetstmc/accueil/fantakomota.jpg"></div>
+                            </div>
+
+                            <div class="des-team-item-box active hover-reveal-item p-relative">
+                                <div class="des-team-item">
+                                <h4 class="des-team-title">Kadidia Nantoumé</h4>
+                                <span>Caissière</span>
+                                </div>
+                                <div class="des-team-reveal-img" data-background="Assetstmc/accueil/kadidianantoume.jpg"></div>
+                            </div>
+
+                            <div class="des-team-item-box active hover-reveal-item p-relative">
+                                <div class="des-team-item">
+                                <h4 class="des-team-title">Moussa Diallo</h4>
+                                <span>Conseiller Commercial</span>
+                                </div>
+                                <div class="des-team-reveal-img" data-background="Assetstmc/accueil/moussadiallo.jpg"></div>
+                            </div>
                             </div>
                         </div>
+                        </div>
                     </div>
-                </div>
+                    </div>
+
                 <!-- team area end -->
 
             </main>
