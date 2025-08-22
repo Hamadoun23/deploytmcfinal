@@ -471,6 +471,255 @@
                 background-color: #068953 !important;
             }
         }
+
+        /* Styles pour le nouveau footer */
+        /* Police Blair ITC sur tout le footer */
+        .footer-container, .hero-section, .hero-title, .hero-subtitle, .cta-button,
+        .footer-main, .footer-brand, .brand-name, .brand-description,
+        .footer-column, .column-title, .footer-link,
+        .footer-bottom, .copyright, .legal-links, .legal-link {
+            font-family: 'Blair ITC', 'Blair', sans-serif !important;
+        }
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section Hero */
+        .hero-section {
+            background: linear-gradient(135deg, #666 0%, #333 50%, #000 100%);
+            padding: 60px 40px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-title {
+            font-size: 3.2rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: #ccc;
+            margin-bottom: 32px;
+            max-width: 640px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.5;
+        }
+
+        .cta-button {
+            background: white;
+            color: #333;
+            padding: 16px 32px;
+            border: 2px solid #0a57a4;
+            border-radius: 12px;
+            font-size: 1.15rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            background-color: #0a57a4;
+            color: #ffffff;
+        }
+
+        /* Section Footer principale */
+        .footer-main {
+            padding: 60px 40px 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .footer-brand {
+            grid-column: 1;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .logo-icon {
+            width: 24px;
+            height: 24px;
+            background: #333;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .brand-name {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .brand-description {
+            color: #666;
+            line-height: 1.75;
+            margin-bottom: 24px;
+            font-size: 1.1rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 16px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: #f5f5f5;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            font-size: 1.25rem;
+        }
+
+        .social-link:hover {
+            background: #333;
+            color: white;
+        }
+
+        .footer-column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .column-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Liens de la colonne "Nos pages" en h4 plus grands */
+        .footer-column .page-link-title {
+            margin: 0 0 12px 0;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #333;
+            line-height: 1.35;
+        }
+        .footer-column .page-link-title .footer-link { font-size: inherit; display: inline-block; }
+
+        .footer-link {
+            color: #666;
+            text-decoration: none;
+            margin-bottom: 12px;
+            font-size: 1.15rem;
+            transition: color 0.2s ease;
+        }
+
+        .footer-link:hover {
+            color: #333;
+        }
+
+        /* Section Copyright */
+        .footer-bottom {
+            padding: 20px 40px;
+            border-top: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .copyright {
+            color: #999;
+            font-size: 1.05rem;
+        }
+
+        .legal-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .legal-link {
+            color: #999;
+            text-decoration: none;
+            font-size: 1.05rem;
+            transition: color 0.2s ease;
+        }
+
+        .legal-link:hover {
+            color: #666;
+        }
+
+        /* Couleurs officielles des réseaux sociaux */
+        .social-link .fa-tiktok { color: #000000; }
+        .social-link .fa-instagram { color: #E4405F; }
+        .social-link .fa-facebook-f { color: #1877F2; }
+        .social-link .fa-youtube { color: #FF0000; }
+
+        /* Hover: fond en couleur officielle, icône en blanc */
+        .social-link[href*="tiktok.com"]:hover { background: #000000; }
+        .social-link[href*="instagram.com"]:hover { background: #E4405F; }
+        .social-link[href*="facebook.com"]:hover { background: #1877F2; }
+        .social-link[href*="youtube.com"]:hover { background: #FF0000; }
+
+        .social-link[href*="tiktok.com"]:hover i,
+        .social-link[href*="instagram.com"]:hover i,
+        .social-link[href*="facebook.com"]:hover i,
+        .social-link[href*="youtube.com"]:hover i { color: #FFFFFF; }
+
+        /* Responsive pour le footer */
+        @media (max-width: 768px) {
+            .footer-main {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                padding: 40px 20px;
+            }
+
+            .hero-section {
+                padding: 40px 20px;
+            }
+
+            .hero-title {
+                font-size: 2.4rem;
+            }
+            .brand-name { font-size: 1.5rem; }
+            .column-title { font-size: 1.4rem; }
+            .footer-link { font-size: 1.05rem; }
+            .social-link { width: 38px; height: 38px; font-size: 1.2rem; }
+
+            .footer-column .page-link-title { font-size: 1.15rem; }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 1024px) and (min-width: 769px) {
+            .footer-main {
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+            }
+        }
     </style>
 
     <div id="header-sticky" class="header header-2">
@@ -835,101 +1084,84 @@
         </main>
         
         <!-- Footer area start -->
+        <style>
+            /* Footer responsive centering */
+            @media (max-width: 576px) {
+                .footer-column {
+                    text-align: center;
+                }
+                .footer-brand {
+                    text-align: center;
+                }
+                .social-links {
+                    justify-content: center;
+                }
+            }
+        </style>
         <footer>
-            <section class="footer heading-bg overflow-hidden p-relative z-1">
-                <div class="container">
-                    <div class="footer-top">
-                        <div class="footer-top-footer-title hero">
-                            <h4 class="top-title _split_text" style="font-family: 'Blair ITC', sans-serif;">Construisons</h4>
-                            <p class="dec rr_title_anim">Ensemble, créons des solutions innovantes <br> pour l'avenir de votre entreprise avec <br> notre expertise en développement.</p>
-                        </div>
-                        <div class="hero"> 
-                            <h2 class="title _split_text" style="font-family: 'Blair ITC', sans-serif;">Votre Avenir.</h2>
-                        </div>
-                    </div>
-                    <div class="row footer__wrap p-relative">
-                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-                            <div class="footer__widget">
-                                <div class="footer__logo mb-20">
-                                    <a href="index.html">
-                                        <img src="Assetstmc\tmclogo\tmclogo-white.png" alt="TMC Logo" style="max-width: 300px; height: auto;">
-                                    </a>
-                                </div>
-                                <div class="footer__content mb-20">
-                                    <p class="dec">
-                                        <a href="https://www.google.com/maps/dir//DIRECTION+GENERALE+GROUPE+TOGUNA+H3C5%2B2CJ+Bamako+Mali/@12.5700855,-7.9414701,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0xe51d1c2274a325f:0x2136a180fb2da0fc!2m2!1d-7.941452!2d12.5700875?entry=ttu&g_ep=EgoyMDI1MDgwNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">
-                                            Route de senou, Zone Aéroportuaire <br> Bamako, Mali
-                                        </a>
-                                    </p>
-                                </div>
-                                <div class="footer__info">
-                                    <a href="tel:+22344979410" style="background: #0a57a4; color: white; padding: 8px 12px; border-radius: 5px; text-decoration: none; margin: 0 5px 8px 0; display: inline-block; transition: opacity 0.3s ease;">+223 44 97 94 10</a>
-                                    <a href="tel:+22384639310" style="background: #0a57a4; color: white; padding: 8px 12px; border-radius: 5px; text-decoration: none; margin: 0 5px 8px 0; display: inline-block; transition: opacity 0.3s ease;">+223 84 63 93 10</a>
-                                    <a href="tel:+22390559141" style="background: #0a57a4; color: white; padding: 8px 12px; border-radius: 5px; text-decoration: none; margin: 0 5px 8px 0; display: inline-block; transition: opacity 0.3s ease;">+223 90 55 91 41</a>
-                                    <a href="tel:+22394395046" style="background: #0a57a4; color: white; padding: 8px 12px; border-radius: 5px; text-decoration: none; margin: 0 5px 8px 0; display: inline-block; transition: opacity 0.3s ease;">+223 94 39 50 46</a>
-                                    <a href="mailto:groupetoguna@groupetoguna.com" style="background: #0a57a4; color: white; padding: 8px 12px; border-radius: 5px; text-decoration: none; margin: 0 5px 8px 0; display: inline-block; transition: opacity 0.3s ease;">groupetoguna@groupetoguna.com</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
-                            <div class="footer__widget">
-                                <div class="footer__widget-title mb-25">
-                                    <h4 style="color: #0a57a4;">Produits</h4>
-                                </div>
-                                <div class="footer__link">
-                                    <ul>
-                                        <li><a href="portfolio-details-creative-slider-light.html"><i class="fa-solid fa-period"></i> Galets Décoratifs</a></li>
-                                        <li><a href="portfolio-details-creative-slider-light.html"><i class="fa-solid fa-period"></i> Calcaire</a></li>
-                                        <li><a href="portfolio-details-creative-slider-light.html"><i class="fa-solid fa-period"></i> Dolérites</a></li>
-                                        <li><a href="portfolio-details-creative-slider-light.html"><i class="fa-solid fa-period"></i> Pierres Taillées</a></li>
-                                        <li><a href="portfolio-details-creative-slider-light.html"><i class="fa-solid fa-period"></i> Graviers</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
-                            <div class="footer__widget">
-                                <div class="footer__widget-title mb-25">
-                                    <h4 style="color: #0a57a4;">Support</h4>
-                                </div>
-                                <div class="footer__link">
-                                    <ul>
-                                        <li><a href="about.html"><i class="fa-solid fa-period"></i> À propos</a></li>
-                                        <li><a href="contact.html"><i class="fa-solid fa-period"></i> Contact</a></li>
-                                        <li><a href="portfolio-creative-thumb-slider.html"><i class="fa-solid fa-period"></i> Nos Produits</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-12 col-sm-12 mb-4">
-                            <div class="footer__widget">
-                                <div class="footer__widget-title mb-25">
-                                    <h4 style="color: #0a57a4;">À propos de TMC</h4>
-                                </div>
-                                <p class="dec">Toguna Mining Corporation est leader dans l'extraction et la transformation de matériaux de construction au Mali. Notre expertise garantit des produits de qualité pour vos projets.</p>
-                            </div>
-                        </div>
+            <div class="footer-container">
+                <!-- Section Hero -->
+                <div class="hero-section">
+                    <h2 class="hero-title">Besoin de matériaux de construction de qualité ?</h2>
+                    <p class="hero-subtitle">Toguna Mining Corporation fournit des matériaux fiables et performants pour vos projets au Mali et dans la sous‑région.</p>
+                    <a class="cta-button" href="Assetstmc/abouts/Presentation Toguna Mining.pdf" download target="_blank" rel="noopener">Télécharger la présentation</a>
+                </div>
 
-                    </div>
-                </div>
-                <div class="footer__bottom-wrapper">
-                    <div class="container">
-                        <div class="footer__bottom">
-                            <div class="footer__copyright">
-                                <p>© 2025 GDA Corporate.</p>
-                            </div>
-                            <div class="footer__copyright-menu">
-                                <ul>
-                                    <li><a href="https://www.tiktok.com/@togunamining?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener" style="background: #000000; color: white; padding: 8px 12px; border-radius: 5px; text-decoration: none; margin: 0 5px; display: inline-block; transition: opacity 0.3s ease;">Tiktok</a></li> 
-                                    <li><a href="https://www.instagram.com/mtoguna?utm_source=ig_web_button_share_sheet&igsh=NGUwOWZidGE3OXhu" target="_blank" rel="noopener" style="background: #E4405F; color: white; padding: 8px 12px; border-radius: 5px; text-decoration: none; margin: 0 5px; display: inline-block; transition: opacity 0.3s ease;">Instagram</a></li> 
-                                    <li><a href="https://www.facebook.com/share/1GqZebvYbv/?mibextid=wwXIfr" target="_blank" rel="noopener" style="background: #1877F2; color: white; padding: 8px 12px; border-radius: 5px; text-decoration: none; margin: 0 5px; display: inline-block; transition: opacity 0.3s ease;">Facebook</a></li>
-                                    <li><a href="https://youtube.com/@togunamining-corp?si=p4G_PjlKexDzstfh" target="_blank" rel="noopener" style="background: #FF0000; color: white; padding: 8px 12px; border-radius: 5px; text-decoration: none; margin: 0 5px; display: inline-block; transition: opacity 0.3s ease;">Youtube</a></li>
-                                </ul>
-                            </div>
+                <!-- Section Footer principale -->
+                <div class="footer-main">
+                    <!-- Marque -->
+                    <div class="footer-brand">
+                        <div class="brand-logo">
+                            <img src="Assetstmc/tmclogo/tmclogo-black.png" alt="Toguna Mining Corporation" style="height:60px;width:auto;object-fit:contain;" />
+                        </div>
+                        <p class="brand-description" style="font-size: clamp(15px, 1.4vw, 18px); line-height: 1.6;">Leader dans l'extraction et la transformation de matériaux de construction au Mali. Qualité, fiabilité et engagement pour vos chantiers.</p>
+                        <div class="social-links">
+                            <a aria-label="Tiktok" href="https://www.tiktok.com/@togunamining?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+                            <a aria-label="Instagram" href="https://www.instagram.com/mtoguna?utm_source=ig_web_button_share_sheet&igsh=NGUwOWZidGE3OXhu" target="_blank" rel="noopener" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                            <a aria-label="Facebook" href="https://www.facebook.com/share/1GqZebvYbv/?mibextid=wwXIfr" target="_blank" rel="noopener" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a aria-label="YouTube" href="https://youtube.com/@togunamining-corp?si=p4G_PjlKexDzstfh" target="_blank" rel="noopener" class="social-link"><i class="fa-brands fa-youtube"></i></a>
                         </div>
                     </div>
+
+                    <!-- Colonne Product -->
+                    <div class="footer-column">
+                        <h3 class="column-title">Produits</h3>
+                        <h4 class="page-link-title"><a href="portfolio-details-creative-slider-light.html" class="footer-link">Calcaire</a></h4>
+                        <h4 class="page-link-title"><a href="portfolio-details-creative-slider-light.html" class="footer-link">Dolérite</a></h4>
+                        <h4 class="page-link-title"><a href="portfolio-details-creative-slider-light.html" class="footer-link">Pierres taillées</a></h4>
+                        <h4 class="page-link-title"><a href="portfolio-details-creative-slider-light.html" class="footer-link">Graviers</a></h4>
+                        <h4 class="page-link-title"><a href="portfolio-details-creative-slider-light.html" class="footer-link">Galets décoratifs</a></h4>
+                    </div>
+
+                    <!-- Colonne Resources -->
+                    <div class="footer-column">
+                        <h3 class="column-title">Ressources</h3>
+                        <h4 class="page-link-title"><a href="Assetstmc/abouts/Presentation Toguna Mining.pdf" download target="_blank" rel="noopener" class="footer-link">Présentation (PDF)</a></h4>
+                        <h4 class="page-link-title"><a href="Assetstmc/abouts/CATALOGUE MINING REVUUU PRINT.pdf" download target="_blank" rel="noopener" class="footer-link">Catalogue (PDF)</a></h4>
+                        <h4 class="page-link-title"><a href="index-startup-agency-light.html" class="footer-link">Galerie média</a></h4>
+                        <h4 class="page-link-title"><a href="contact.html" class="footer-link">Support</a></h4>
+                    </div>
+
+                    <!-- Colonne Company -->
+                    <div class="footer-column">
+                        <h3 class="column-title">Nos pages</h3>
+                        <h4 class="page-link-title"><a href="index.html" class="footer-link">Accueil</a></h4>
+                        <h4 class="page-link-title"><a href="about.html" class="footer-link">À propos</a></h4>
+                        <h4 class="page-link-title"><a href="portfolio-creative-thumb-slider.html" class="footer-link">Nos produits phares</a></h4>
+                        <h4 class="page-link-title"><a href="portfolio-details-creative-slider-light.html" class="footer-link">Détails produits</a></h4>
+                        <h4 class="page-link-title"><a href="index-startup-agency-light.html" class="footer-link">Galerie média</a></h4>
+                        <h4 class="page-link-title"><a href="contact.html" class="footer-link">Contact</a></h4>
+                    </div>
                 </div>
-            </section>
+
+                <!-- Section Copyright -->
+                <div class="footer-bottom">
+                    <p class="copyright">© 2025 GDA Corporate</p>
+                    <div class="legal-links">
+                        <span class="legal-link">TMC Mining & Produits</span>
+                    </div>
+                </div>
+            </div>
         </footer>
 
         

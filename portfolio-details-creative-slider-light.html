@@ -31,6 +31,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Swiper CSS + JS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<!-- TMC Products Gallery CSS -->
+<link rel="stylesheet" href="css/products-gallery.css">
 
     <style>
     /* Style personnalisé pour le bouton "En savoir plus" */
@@ -44,6 +46,52 @@
         background-color: #0a57a4 !important;
         color: white !important;
         border-color: #0a57a4 !important;
+    }
+
+    /* Style spécifique pour les pierres taillées - images plus basses */
+    .pierres-taillees-carousel .product-box img {
+        margin-top: 1px !important;
+        object-position: center 50% !important;
+    }
+    
+    .pierres-taillees-carousel .product-box {
+        padding-bottom: 15px !important;
+    }
+    
+    /* Style spécifique pour les galets décoratifs - même style que pierres taillées */
+    .galets-decoratifs-carousel .product-box img {
+        margin-top: 1px !important;
+        object-position: center 50% !important;
+    }
+    
+    .galets-decoratifs-carousel .product-box {
+        padding-bottom: 15px !important;
+    }
+    
+    /* Style spécifique pour le gravier mixte - image centrée */
+    .gravier-mixte-carousel .product-box img {
+        margin-top: 0 !important;
+        object-position: center center !important;
+    }
+    
+    .gravier-mixte-carousel .product-box {
+        padding-bottom: 15px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    /* Centrer le carousel du gravier mixte au milieu de la page */
+    .gravier-mixte-carousel .swiper-wrapper {
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    
+    .gravier-mixte-carousel .swiper-slide {
+        width: auto !important;
+        max-width: 300px !important;
+        margin: 0 auto !important;
     }
 
     /* Style pour le titre TMC en bleu */
@@ -422,104 +470,7 @@
         <div class="products-carousel-container">
           <div class="swiper products-carousel">
             <div class="swiper-wrapper">
-              <!-- Produit 1 -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect product-box">
-                    <img data-speed=".8" src="Assetstmc/Detailprod/dolerite0-4.png" alt="">
-                    <div class="price-tag">A partir de <br> 25 000 FCFA / T</div>
-                  </div>
-                  <h3 class="product-title">Dolérite 0/4</h3>
-                </div>
-              </div>
-
-              <!-- Produit 2 -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect product-box">
-                    <img data-speed=".8" src="Assetstmc/Detailprod/dolerite0-5.png" alt="">
-                    <div class="price-tag">A partir de <br> 27 000 FCFA / T</div>
-                  </div>
-                  <h3 class="product-title">Dolérite 0/5</h3>
-                </div>
-              </div>
-
-              <!-- Produit 3 -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect product-box">
-                    <img data-speed=".8" src="Assetstmc/Detailprod/dolerite5-15.png" alt="">
-                    <div class="price-tag">A partir de <br> 30 000 FCFA / T</div>
-                  </div>
-                  <h3 class="product-title">Dolérite 5/15</h3>
-                </div>
-              </div>
-
-              <!-- Produit 4 -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect product-box">
-                    <img data-speed=".8" src="Assetstmc/Detailprod/dolerite0-4.png" alt="">
-                    <div class="price-tag">A partir de <br> 28 000 FCFA / T</div>
-                  </div>
-                  <h3 class="product-title">Dolérite 0/6</h3>
-                </div>
-              </div>
-
-              <!-- Produit 5 -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect product-box">
-                    <img data-speed=".8" src="Assetstmc/Detailprod/dolerite0-5.png" alt="">
-                    <div class="price-tag">A partir de <br> 32 000 FCFA / T</div>
-                  </div>
-                  <h3 class="product-title">Dolérite 0/8</h3>
-                </div>
-              </div>
-
-              <!-- Produit 6 -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect product-box">
-                    <img data-speed=".8" src="Assetstmc/Detailprod/dolerite5-15.png" alt="">
-                    <div class="price-tag">A partir de <br> 35 000 FCFA / T</div>
-                  </div>
-                  <h3 class="product-title">Dolérite 10/20</h3>
-                </div>
-              </div>
-
-              <!-- Produit 7 -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect product-box">
-                    <img data-speed=".8" src="Assetstmc/Detailprod/dolerite0-4.png" alt="">
-                    <div class="price-tag">A partir de <br> 26 000 FCFA / T</div>
-                  </div>
-                  <h3 class="product-title">Dolérite 0/3</h3>
-                </div>
-              </div>
-
-              <!-- Produit 8 -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect product-box">
-                    <img data-speed=".8" src="Assetstmc/Detailprod/dolerite0-5.png" alt="">
-                    <div class="price-tag">A partir de <br> 29 000 FCFA / T</div>
-                  </div>
-                  <h3 class="product-title">Dolérite 0/7</h3>
-                </div>
-              </div>
-
-              <!-- Produit 9 -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect product-box">
-                    <img data-speed=".8" src="Assetstmc/Detailprod/dolerite5-15.png" alt="">
-                    <div class="price-tag">A partir de <br> 33 000 FCFA / T</div>
-                  </div>
-                  <h3 class="product-title">Dolérite 15/25</h3>
-                </div>
-              </div>
+              <!-- Les slides seront générés automatiquement par JavaScript -->
             </div>
             
             <!-- Navigation du carrousel -->
@@ -581,6 +532,7 @@
   border-radius: 15px;
   cursor: pointer;
   height: 250px;
+  padding-bottom: 25px;
 }
 
 .product-box img {
@@ -589,11 +541,12 @@
   object-fit: cover;
   border-radius: 15px;
   display: block;
+  margin-top: 20px;
 }
 
 .price-tag {
   position: absolute;
-  bottom: 10%;
+  bottom: 2%;
   left: 50%;
   transform: translateX(-50%);
   background: rgba(10, 87, 164, 0.9);
@@ -605,6 +558,11 @@
   pointer-events: none;
   text-align: center;
   white-space: nowrap;
+  transition: opacity 0.3s ease;
+}
+
+.price-tag.active {
+  opacity: 1;
 }
 
 /* Hover effect */
@@ -665,118 +623,8 @@
 <!-- SCRIPTS -->
 <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  // Carrousel des produits
-  const productsCarousel = new Swiper('.products-carousel', {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    loop: true,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.products-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.products-nav-next',
-      prevEl: '.products-nav-prev',
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-      },
-      1200: {
-        slidesPerView: 4,
-        spaceBetween: 30,
-      }
-    },
-    on: {
-      slideChange: function () {
-        // Animation des cartes au changement de slide
-        gsap.fromTo('.swiper-slide-active .product-box',
-          { scale: 0.8, opacity: 0.7 },
-          { scale: 1, opacity: 1, duration: 0.6, ease: 'power2.out' }
-        );
-      }
-    }
-  });
-
-  // Animation prix au survol
-  const products = document.querySelectorAll('.product-box');
-
-  products.forEach(product => {
-    const priceTag = product.querySelector('.price-tag');
-
-    product.addEventListener('mouseenter', () => {
-      gsap.to(priceTag, {
-        opacity: 1,
-        y: -10,
-        duration: 0.4,
-        ease: "power2.out"
-      });
-    });
-
-    product.addEventListener('mouseleave', () => {
-      gsap.to(priceTag, {
-        opacity: 0,
-        y: 0,
-        duration: 0.3,
-        ease: "power2.in"
-      });
-    });
-  });
-
-  // Swiper init (inchangé)
-  const swiper = new Swiper('.dolerite-slider', {
-    loop: true,
-    speed: 1000,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
-    },
-    on: {
-      slideChangeTransitionStart: () => {
-        gsap.to('.swiper-slide .slide-img', {
-          scale: 1.1,
-          rotateZ: 3,
-          opacity: 0,
-          duration: 0.6,
-          ease: 'power2.inOut'
-        });
-      },
-      slideChangeTransitionEnd: () => {
-        gsap.fromTo('.swiper-slide-active .slide-img',
-          { scale: 1.3, rotateZ: -2, opacity: 0 },
-          {
-            scale: 1,
-            rotateZ: 0,
-            opacity: 1,
-            duration: 1.2,
-            ease: 'expo.out'
-          }
-        );
-      }
-    }
-  });
-});
-</script>
+<script src="js/products-carousel.js"></script>
+<script src="js/gallery-slider.js"></script>
 
 
 
@@ -839,159 +687,55 @@ document.addEventListener('DOMContentLoaded', function () {
 
             
                 <div class="tp-pd-3-gallery-area" id="galerie-calcaire"> 
-                <div class="container container-1800">
-                    <div class="row gx-20">
-                    <div class="col-lg-4">
-                        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect product-box">
-                        <img data-speed=".8" src="Assetstmc\Detailprod\calcaire0-5.png" alt="">
-                        <div class="price-tag">A partir de <br> 22 000 FCFA / T</div>
-                        </div>
-                        <h1 class="product-title">Calcaire  0/5</h1>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect product-box">
-                        <img data-speed=".8" src="Assetstmc\Detailprod\calcaire0-31,5.png" alt="">
-                        <div class="price-tag">A partir de <br> 24 000 FCFA / T</div>
-                        </div>
-                        <h1 class="product-title">Calcaire 0/31,5</h1>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect product-box">
-                        <img data-speed=".8" src="Assetstmc\Detailprod\calcaire5-15.png" alt="">
-                        <div class="price-tag">A partir de <br> 26 000 FCFA / T</div>
-                        </div>
-                        <h1 class="product-title">Calcaire 5/15</h1>
-                    </div>
+  <div class="container container-1800">
+    <div class="row gx-20">
 
-                    <div class="gallery-container mt-40">
-                        <div class="swiper dolerite-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                            <div class="slide-inner">
-                                <img src="Assetstmc/Detailprod/bgcalcaire1.png" alt="Dolérite 1" class="slide-img">
-                            </div>
-                            </div>
-                            <div class="swiper-slide">
-                            <div class="slide-inner">
-                                <img src="Assetstmc/Detailprod/bgcalcaire2.png" alt="Dolérite 2" class="slide-img">
-                            </div>
-                            </div>
-                            <div class="swiper-slide">
-                            <div class="slide-inner">
-                                <img src="Assetstmc/Detailprod/bgcalcaire3.png" alt="Dolérite Décoration" class="slide-img">
-                            </div>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </div>
+      <!-- Carrousel des produits -->
+      <div class="col-12">
+        <div class="products-carousel-container">
+          <div class="swiper products-carousel">
+            <div class="swiper-wrapper">
+              <!-- Les slides seront générés automatiquement par JavaScript -->
+            </div>
+            
+            <!-- Navigation du carrousel -->
+            <div class="swiper-button-prev products-nav-prev"></div>
+            <div class="swiper-button-next products-nav-next"></div>
+            <div class="swiper-pagination products-pagination"></div>
+          </div>
+        </div>
+      </div>
 
-                <style>
-                /* Titre produit */
-                .product-title {
-                text-align: center;
-                color: #068953;
-                font-weight: bold;
-                font-size: 24px;
-                margin-top: 10px;
-                margin-bottom: 30px;
-                }
+      <!-- Slider reste inchangé -->
+      <div class="gallery-container mt-40">
+        <div class="swiper dolerite-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide-inner">
+                <img src="Assetstmc/Detailprod/bgcalcaire1.png" alt="Calcaire 1" class="slide-img">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-inner">
+                <img src="Assetstmc/Detailprod/bgcalcaire2.png" alt="Calcaire 2" class="slide-img">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-inner">
+                <img src="Assetstmc/Detailprod/bgcalcaire3.png" alt="Calcaire Décoration" class="slide-img">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-                /* Hover effect on product gallery images */
-                .hover-effect {
-                transition: transform 0.5s ease, box-shadow 0.5s ease;
-                }
-                .hover-effect:hover {
-                transform: scale(1.08) translateY(-10px);
-                z-index: 2;
-                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-                }
-
-                /* Swiper slider styles */
-                .gallery-container {
-                width: 100%;
-                overflow: hidden;
-                position: relative;
-                }
-
-                .swiper-slide {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 80vh;
-                position: relative;
-                overflow: hidden;
-                }
-
-                .slide-inner {
-                position: relative;
-                width: 90%;
-                height: 100%;
-                overflow: hidden;
-                border-radius: 30px;
-                box-shadow: 0 20px 50px rgba(0,0,0,0.2);
-                }
-
-                .slide-img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transform-origin: center;
-                }
-                </style>
-
-                <script>
-                document.addEventListener('DOMContentLoaded', function () {
-                const swiper = new Swiper('.dolerite-slider', {
-                    loop: true,
-                    speed: 1000,
-                    autoplay: {
-                    delay: 2000,
-                    disableOnInteraction: false
-                    },
-                    pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true
-                    },
-                    navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev'
-                    },
-                    on: {
-                    slideChangeTransitionStart: () => {
-                        gsap.to('.swiper-slide .slide-img', {
-                        scale: 1.1,
-                        rotateZ: 3,
-                        opacity: 0,
-                        duration: 0.6,
-                        ease: 'power2.inOut'
-                        });
-                    },
-                    slideChangeTransitionEnd: () => {
-                        gsap.fromTo('.swiper-slide-active .slide-img',
-                        {
-                            scale: 1.3,
-                            rotateZ: -2,
-                            opacity: 0
-                        },
-                        {
-                            scale: 1,
-                            rotateZ: 0,
-                            opacity: 1,
-                            duration: 1.2,
-                            ease: 'expo.out'
-                        }
-                        );
-                    }
-                    }
-                });
-                });
-                </script> 
+                 
 
 
                 <div class="tp-pd-3-overview-area pt-120 pb-95">
@@ -1001,7 +745,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 <div class="tp-pd-3-overview-left tp_fade_anim" data-delay=".3">
                                     <span class="tp-pd-3-subtitle">Produits Tmc</span>
                                     <h4 class="tp-pd-3-title" style="color: #068953;">Présentation des Pierres Taillées</h4>
-                                    <button class="tp-btn-border" style="background-color: #0066cc; color: white; border: 2px solid transparent; transition: all 0.3s ease; padding: 15px 30px; border-radius: 5px; cursor: pointer;" onmouseover="this.style.border='2px solid #0066cc'; this.style.backgroundColor='transparent'; this.style.color='#0066cc';" onmouseout="this.style.border='2px solid transparent'; this.style.backgroundColor='#0066cc'; this.style.color='white';" onclick="setTimeout(function() { const element = document.getElementById('galerie-pierre'); const headerHeight = document.querySelector('header') ? document.querySelector('header').offsetHeight : 100; const elementPosition = element.offsetTop - headerHeight - 20; window.scrollTo({top: elementPosition, behavior: 'smooth'}); }, 100);">
+                                    <button class="tp-btn-border" style="background-color: #0066cc; color: white; border: 2px solid transparent; transition: all 0.3s ease; padding: 15px 30px; border-radius: 5px; cursor: pointer;" onmouseover="this.style.border='2px solid #0066cc'; this.style.backgroundColor='transparent'; this.style.color='#0066cc';" onmouseout="this.style.border='2px solid transparent'; this.style.backgroundColor='#0066cc'; this.style.color='white';" onclick="setTimeout(function() { const element = document.getElementById('galerie-pierresTaillees'); const headerHeight = document.querySelector('header') ? document.querySelector('header').offsetHeight : 100; const elementPosition = element.offsetTop - headerHeight - 20; window.scrollTo({top: elementPosition, behavior: 'smooth'}); }, 100);">
                                         Voir les images <i class="bi bi-arrow-down"></i>
                                     </button>
                                 </div>
@@ -1047,53 +791,48 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>
 
                                 <!-- portfolio details 3 gallery-->
-                <div class="tp-pd-3-gallery-area" id="galerie-pierre"> 
+                <div class="tp-pd-3-gallery-area" id="galerie-pierresTaillees"> 
                 <div class="container container-1800">
                     <div class="row gx-20">
-                    <div class="col-lg-4">
-                        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect product-box">
-                        <img data-speed=".8" src="Assetstmc\Detailprod\PierretailléeMixte.png" alt="">
-                        <div class="price-tag">A partir de <br> 35 000 FCFA / T</div>
+                    <!-- Carrousel des produits -->
+                    <div class="col-12">
+                        <div class="products-carousel-container">
+                            <div class="swiper products-carousel pierres-taillees-carousel">
+                                <div class="swiper-wrapper">
+                                    <!-- Les slides seront générés automatiquement par JavaScript -->
+                                </div>
+                                
+                                <!-- Navigation du carrousel -->
+                                <div class="swiper-button-prev products-nav-prev"></div>
+                                <div class="swiper-button-next products-nav-next"></div>
+                                <div class="swiper-pagination products-pagination"></div>
+                            </div>
                         </div>
-                        <h1 class="product-title">Pierres Taillées Mixte</h1>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect product-box">
-                        <img data-speed=".8" src="Assetstmc\Detailprod\pierrepréfabriqué.png" alt="">
-                        <div class="price-tag">A partir de <br> 40 000 FCFA / T</div>
-                        </div>
-                        <h1 class="product-title">Pierres Préfabriqué</h1>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect product-box">
-                        <img data-speed=".8" src="Assetstmc\Detailprod\pierrepolie.png" alt="">
-                        <div class="price-tag">A partir de <br> 45 000 FCFA / T</div>
-                        </div>
-                        <h1 class="product-title">Pierres Polie</h1>
                     </div>
 
+                    <!-- Slider reste inchangé -->
                     <div class="gallery-container mt-40">
                         <div class="swiper dolerite-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                            <div class="slide-inner">
-                                <img src="Assetstmc/Detailprod/bgpierretailée1.png" alt="Dolérite 1" class="slide-img">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slide-inner">
+                                        <img src="Assetstmc/Detailprod/bgpierretailée1.png" alt="Pierres taillées 1" class="slide-img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide-inner">
+                                        <img src="Assetstmc/Detailprod/bgpierretailée2.png" alt="Pierres taillées 2" class="slide-img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide-inner">
+                                        <img src="Assetstmc/Detailprod/bgpierretailée3.png" alt="Pierres taillées Décoration" class="slide-img">
+                                    </div>
+                                </div>
                             </div>
-                            </div>
-                            <div class="swiper-slide">
-                            <div class="slide-inner">
-                                <img src="Assetstmc/Detailprod/bgpierretailée2.png" alt="Dolérite 2" class="slide-img">
-                            </div>
-                            </div>
-                            <div class="swiper-slide">
-                            <div class="slide-inner">
-                                <img src="Assetstmc/Detailprod/bgpierretailée3.png" alt="Dolérite Décoration" class="slide-img">
-                            </div>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
                     </div>
                     </div>
@@ -1153,57 +892,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 transform-origin: center;
                 }
                 </style>
-
-                <script>
-                document.addEventListener('DOMContentLoaded', function () {
-                const swiper = new Swiper('.dolerite-slider', {
-                    loop: true,
-                    speed: 1000,
-                    autoplay: {
-                    delay: 2000,
-                    disableOnInteraction: false
-                    },
-                    pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true
-                    },
-                    navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev'
-                    },
-                    on: {
-                    slideChangeTransitionStart: () => {
-                        gsap.to('.swiper-slide .slide-img', {
-                        scale: 1.1,
-                        rotateZ: 3,
-                        opacity: 0,
-                        duration: 0.6,
-                        ease: 'power2.inOut'
-                        });
-                    },
-                    slideChangeTransitionEnd: () => {
-                        gsap.fromTo('.swiper-slide-active .slide-img',
-                        {
-                            scale: 1.3,
-                            rotateZ: -2,
-                            opacity: 0
-                        },
-                        {
-                            scale: 1,
-                            rotateZ: 0,
-                            opacity: 1,
-                            duration: 1.2,
-                            ease: 'expo.out'
-                        }
-                        );
-                    }
-                    }
-                });
-                });
-                </script>
-
-
-
 
                 <div class="tp-pd-3-overview-area pt-120 pb-95"> 
     <div class="container container-1230">
@@ -1257,49 +945,43 @@ document.addEventListener('DOMContentLoaded', function () {
     </div>
 </div>
                 
-                <!-- portfolio details 3 gallery-->
                                                  <!-- portfolio details 3 gallery-->
                 <div class="tp-pd-3-gallery-area" id="galerie-galets">
                 <div class="container container-1800">
                     <div class="row gx-20">
-                    <div class="col-lg-4">
-                        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect product-box">
-                        <img data-speed=".8" src="Assetstmc\Detailprod\produitbadiangara.png" alt="">
-                        <div class="price-tag">A partir de <br> 28 000 FCFA / T</div>
+                    <!-- Carrousel des produits -->
+                    <div class="col-12">
+                        <div class="products-carousel-container">
+                            <div class="swiper products-carousel galets-decoratifs-carousel" data-section="galetsDecoratifs">
+                                <div class="swiper-wrapper">
+                                    <!-- Les slides seront générés automatiquement par JavaScript -->
                         </div>
-                        <h1 class="product-title">Galet Bandiagara</h1>
+                                
+                                <!-- Navigation du carrousel -->
+                                <div class="swiper-button-prev products-nav-prev"></div>
+                                <div class="swiper-button-next products-nav-next"></div>
+                                <div class="swiper-pagination products-pagination"></div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect product-box">
-                        <img data-speed=".8" src="Assetstmc\Detailprod\produitcadregaletbasic.png" alt="">
-                        <div class="price-tag">A partir de <br> 30 000 FCFA / T</div>
                         </div>
-                        <h1 class="product-title">Galet Basic</h1>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect product-box">
-                        <img data-speed=".8" src="Assetstmc\Detailprod\produitcadregaletgawa.png" alt="">
-                        <div class="price-tag">A partir de <br> 32 000 FCFA / T</div>
-                        </div>
-                        <h1 class="product-title">Galet Gawa</h1>
                     </div>
 
+                    <!-- Slider reste inchangé -->
                     <div class="gallery-container mt-40">
                         <div class="swiper dolerite-slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                             <div class="slide-inner">
-                                <img src="Assetstmc/Detailprod/bg galet basic et soninkegny.png" alt="Dolérite 1" class="slide-img">
+                                <img src="Assetstmc/Detailprod/bg galet basic et soninkegny.png" alt="Galets 1" class="slide-img">
                             </div>
                             </div>
                             <div class="swiper-slide">
                             <div class="slide-inner">
-                                <img src="Assetstmc/Detailprod/bg galet 1.png" alt="Dolérite 2" class="slide-img">
+                                <img src="Assetstmc/Detailprod/bg galet 1.png" alt="Galets 2" class="slide-img">
                             </div>
                             </div>
                             <div class="swiper-slide">
                             <div class="slide-inner">
-                                <img src="Assetstmc/Detailprod/bg galet basic et soninkegny 2.png" alt="Dolérite Décoration" class="slide-img">
+                                <img src="Assetstmc/Detailprod/bg galet basic et soninkegny 2.png" alt="Galets Décoration" class="slide-img">
                             </div>
                             </div>
                         </div>
@@ -1365,54 +1047,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 transform-origin: center;
                 }
                 </style>
-
-                <script>
-                document.addEventListener('DOMContentLoaded', function () {
-                const swiper = new Swiper('.dolerite-slider', {
-                    loop: true,
-                    speed: 1000,
-                    autoplay: {
-                    delay: 2000,
-                    disableOnInteraction: false
-                    },
-                    pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true
-                    },
-                    navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev'
-                    },
-                    on: {
-                    slideChangeTransitionStart: () => {
-                        gsap.to('.swiper-slide .slide-img', {
-                        scale: 1.1,
-                        rotateZ: 3,
-                        opacity: 0,
-                        duration: 0.6,
-                        ease: 'power2.inOut'
-                        });
-                    },
-                    slideChangeTransitionEnd: () => {
-                        gsap.fromTo('.swiper-slide-active .slide-img',
-                        {
-                            scale: 1.3,
-                            rotateZ: -2,
-                            opacity: 0
-                        },
-                        {
-                            scale: 1,
-                            rotateZ: 0,
-                            opacity: 1,
-                            duration: 1.2,
-                            ease: 'expo.out'
-                        }
-                        );
-                    }
-                    }
-                });
-                });
-                </script>
                  
 
                 <div class="tp-pd-3-overview-area pt-120 pb-95">
@@ -1422,7 +1056,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <div class="tp-pd-3-overview-left tp_fade_anim" data-delay=".3">
                     <span class="tp-pd-3-subtitle">Produits Tmc</span>
                     <h4 class="tp-pd-3-title" style="color: #068953;">Présentation des Graviers Mixtes</h4>
-                        <button class="tp-btn-border" style="background-color: #0066cc; color: white; border: 2px solid transparent; transition: all 0.3s ease; padding: 15px 30px; border-radius: 5px; cursor: pointer;" onmouseover="this.style.border='2px solid #0066cc'; this.style.backgroundColor='transparent'; this.style.color='#0066cc';" onmouseout="this.style.border='2px solid transparent'; this.style.backgroundColor='#0066cc'; this.style.color='white';" onclick="setTimeout(function() { const element = document.getElementById('galerie-gravier'); const headerHeight = document.querySelector('header') ? document.querySelector('header').offsetHeight : 100; const elementPosition = element.offsetTop - headerHeight - 20; window.scrollTo({top: elementPosition, behavior: 'smooth'}); }, 100);">
+                        <button class="tp-btn-border" style="background-color: #0066cc; color: white; border: 2px solid transparent; transition: all 0.3s ease; padding: 15px 30px; border-radius: 5px; cursor: pointer;" onmouseover="this.style.border='2px solid #0066cc'; this.style.backgroundColor='transparent'; this.style.color='#0066cc';" onmouseout="this.style.border='2px solid transparent'; this.style.backgroundColor='#0066cc'; this.style.color='white';" onclick="setTimeout(function() { const element = document.getElementById('galerie-gravierMixte'); const headerHeight = document.querySelector('header') ? document.querySelector('header').offsetHeight : 100; const elementPosition = element.offsetTop - headerHeight - 20; window.scrollTo({top: elementPosition, behavior: 'smooth'}); }, 100);">
                                 Voir les images <i class="bi bi-arrow-down"></i>
                         </button>
                 </div>
@@ -1468,15 +1102,22 @@ document.addEventListener('DOMContentLoaded', function () {
 </div>
 
 <!-- Section galerie gravier -->
-<div class="tp-pd-3-gallery-area" id="galerie-gravier">
+<div class="tp-pd-3-gallery-area" id="galerie-gravierMixte">
   <div class="container container-1800">
-    <div class="row justify-content-center">
-      <div class="col-lg-4">
-        <div class="tp-pd-3-gallery-img small-img mb-20 hover-effect product-box text-center">
-          <img data-speed=".8" src="Assetstmc/Detailprod/gravier mixte.png" alt="">
-          <div class="price-tag">A partir de <br> 20 000 FCFA / T</div>
+    <div class="row gx-20">
+    <!-- Carrousel des produits -->
+    <div class="col-12">
+        <div class="products-carousel-container">
+            <div class="swiper products-carousel gravier-mixte-carousel" data-section="gravierMixte">
+                <div class="swiper-wrapper">
+                    <!-- Les slides seront générés automatiquement par JavaScript -->
         </div>
-        <h1 class="product-title">gravier mixte</h1>
+                
+                <!-- Navigation du carrousel -->
+                <div class="swiper-button-prev products-nav-prev"></div>
+                <div class="swiper-button-next products-nav-next"></div>
+                <div class="swiper-pagination products-pagination"></div>
+            </div>
       </div>
     </div>
 
@@ -1485,23 +1126,24 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="slide-inner">
-              <img src="Assetstmc/Detailprod/bg gravier mixte.png" alt="Dolérite 1" class="slide-img">
+              <img src="Assetstmc/Detailprod/Gravier Mixte/Bggraviermixte/bg gravier mixte.png" alt="Gravier mixte 1" class="slide-img">
             </div>
           </div>
           <div class="swiper-slide">
             <div class="slide-inner">
-              <img src="Assetstmc/Detailprod/bg gravier mixte.png" alt="Dolérite 2" class="slide-img">
+              <img src="Assetstmc/Detailprod/Gravier Mixte/Bggraviermixte/bg gravier mixte.png" alt="Gravier mixte 2" class="slide-img">
             </div>
           </div>
           <div class="swiper-slide">
             <div class="slide-inner">
-              <img src="Assetstmc/Detailprod/bg gravier mixte.png" alt="Dolérite Décoration" class="slide-img">
+              <img src="Assetstmc/Detailprod/Gravier Mixte/Bggraviermixte/bg gravier mixte.png" alt="Gravier mixte Décoration" class="slide-img">
             </div>
           </div>
         </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
+      </div>
       </div>
     </div>
   </div>
@@ -1560,54 +1202,6 @@ document.addEventListener('DOMContentLoaded', function () {
   transform-origin: center;
 }
 </style>
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const swiper = new Swiper('.dolerite-slider', {
-    loop: true,
-    speed: 1000,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
-    },
-    on: {
-      slideChangeTransitionStart: () => {
-        gsap.to('.swiper-slide .slide-img', {
-          scale: 1.1,
-          rotateZ: 3,
-          opacity: 0,
-          duration: 0.6,
-          ease: 'power2.inOut'
-        });
-      },
-      slideChangeTransitionEnd: () => {
-        gsap.fromTo('.swiper-slide-active .slide-img',
-          {
-            scale: 1.3,
-            rotateZ: -2,
-            opacity: 0
-          },
-          {
-            scale: 1,
-            rotateZ: 0,
-            opacity: 1,
-            duration: 1.2,
-            ease: 'expo.out'
-          }
-        );
-      }
-    }
-  });
-});
-</script>
 
                 <!-- portfolio details 3 portfolio-->
                 <div class="tp-pd-3-portfolio-area pt-200 pb-60">
@@ -1696,6 +1290,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <!-- GSAP -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- TMC Products Gallery Scripts -->
+<script src="js/unified-product-carousel.js"></script>
+<script src="js/gallery-slider.js"></script>
 
 
     <!-- JS here -->
