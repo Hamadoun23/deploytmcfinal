@@ -98,6 +98,11 @@
         .tp-header-2-bar:hover span:first-child {
             color: white !important;
         }
+        
+        /* Afficher les prix sur mobile */
+        .price-tag {
+            opacity: 1 !important;
+        }
     }
     </style>
 
@@ -266,7 +271,7 @@
                         <a class="tp-line-white" href="tel:42345678910">+223 44 97 94 10 </a> <br>
                         <a class="tp-line-white" href="tel:42345678910">+223 84 63 93 10 </a> <br>
                         <a class="tp-line-white" href="tel:42345678910">+223 90 55 91 41 </a> <br>
-                        <a class="tp-line-white" href="tel:42345678910">+223 94 39 50 46 </a>
+                        <a class="tp-line-white" href="tel:42345678910">+223 94 39 50 46 </a>
                     </div>
                     <div class="tp-offcanvas-2-right-info-item">
                         <label class="mb-10">Email</label>
@@ -736,7 +741,7 @@ document.addEventListener('DOMContentLoaded', function () {
     spaceBetween: 20,
     loop: true,
     autoplay: {
-      delay: 2000,
+      delay: 3000,
       disableOnInteraction: false,
     },
     pagination: {
@@ -838,7 +843,7 @@ document.addEventListener('DOMContentLoaded', function () {
     loop: true,
     speed: 1000,
     autoplay: {
-      delay: 2000,
+      delay: 3000,
       disableOnInteraction: false
     },
     pagination: {
@@ -850,27 +855,7 @@ document.addEventListener('DOMContentLoaded', function () {
       prevEl: '.swiper-button-prev'
     },
     on: {
-      slideChangeTransitionStart: () => {
-        gsap.to('.swiper-slide .slide-img', {
-          scale: 1.1,
-          rotateZ: 3,
-          opacity: 0,
-          duration: 0.6,
-          ease: 'power2.inOut'
-        });
-      },
-      slideChangeTransitionEnd: () => {
-        gsap.fromTo('.swiper-slide-active .slide-img',
-          { scale: 1.3, rotateZ: -2, opacity: 0 },
-          {
-            scale: 1,
-            rotateZ: 0,
-            opacity: 1,
-            duration: 1.2,
-            ease: 'expo.out'
-          }
-        );
-      }
+      // Suppression des effets GSAP qui causaient le "tac tac"
     }
   });
 });
@@ -897,7 +882,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 <div class="tp-pd-3-overview-right">
                                     <div class="tp-pd-3-overview-text">
                                         <p>
-                                            Le calcaire est une roche sédimentaire largement utilisée dans la construction, la fabrication de ciment et l’amendement des sols. 
+                                            Le calcaire est une roche sédimentaire largement utilisée dans la construction, la fabrication de ciment et l'amendement des sols. 
                                             Sa polyvalence et sa disponibilité en font un matériau essentiel pour de nombreux secteurs industriels.
                                         </p>
                                     </div>
@@ -1046,7 +1031,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 <div class="tp-pd-3-overview-right">
                                     <div class="tp-pd-3-overview-text">
                                         <p>
-                                            Les pierres taillées sont des Produits naturels façonnés pour la construction, la décoration et l’aménagement paysager. 
+                                            Les pierres taillées sont des Produits naturels façonnés pour la construction, la décoration et l'aménagement paysager. 
                                             Leur robustesse et leur esthétique en font un choix privilégié pour des ouvrages durables et élégants.
                                         </p>
                                     </div>
@@ -1740,7 +1725,7 @@ document.addEventListener('DOMContentLoaded', function () {
       <!-- Carrousel des produits -->
       <div class="col-12">
         <div class="products-carousel-container">
-          <div class="swiper products-carousel">
+          <div class="swiper products-carousel galets-decoratifs-carousel gravier-center">
             <div class="swiper-wrapper">
               <!-- Gravier Mixte -->
               <div class="swiper-slide">
@@ -1851,7 +1836,7 @@ document.addEventListener('DOMContentLoaded', function () {
     loop: true,
     speed: 1000,
     autoplay: {
-      delay: 2000,
+      delay: 3000,
       disableOnInteraction: false
     },
     pagination: {
@@ -1861,33 +1846,6 @@ document.addEventListener('DOMContentLoaded', function () {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
-    },
-    on: {
-      slideChangeTransitionStart: () => {
-        gsap.to('.swiper-slide .slide-img', {
-          scale: 1.1,
-          rotateZ: 3,
-          opacity: 0,
-          duration: 0.6,
-          ease: 'power2.inOut'
-        });
-      },
-      slideChangeTransitionEnd: () => {
-        gsap.fromTo('.swiper-slide-active .slide-img',
-          {
-            scale: 1.3,
-            rotateZ: -2,
-            opacity: 0
-          },
-          {
-            scale: 1,
-            rotateZ: 0,
-            opacity: 1,
-            duration: 1.2,
-            ease: 'expo.out'
-          }
-        );
-      }
     }
   });
 });
@@ -1897,7 +1855,7 @@ document.addEventListener('DOMContentLoaded', function () {
     loop: true,
     speed: 1000,
     autoplay: {
-      delay: 2000,
+      delay: 3000,
       disableOnInteraction: false
     },
     pagination: {
@@ -1907,33 +1865,6 @@ document.addEventListener('DOMContentLoaded', function () {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
-    },
-    on: {
-      slideChangeTransitionStart: () => {
-        gsap.to('.swiper-slide .slide-img', {
-          scale: 1.1,
-          rotateZ: 3,
-          opacity: 0,
-          duration: 0.6,
-          ease: 'power2.inOut'
-        });
-      },
-      slideChangeTransitionEnd: () => {
-        gsap.fromTo('.swiper-slide-active .slide-img',
-          {
-            scale: 1.3,
-            rotateZ: -2,
-            opacity: 0
-          },
-          {
-            scale: 1,
-            rotateZ: 0,
-            opacity: 1,
-            duration: 1.2,
-            ease: 'expo.out'
-          }
-        );
-      }
     }
   });
 
@@ -1942,7 +1873,7 @@ document.addEventListener('DOMContentLoaded', function () {
     loop: true,
     speed: 1000,
     autoplay: {
-      delay: 2000,
+      delay: 3000,
       disableOnInteraction: false
     },
     pagination: {
@@ -1952,33 +1883,6 @@ document.addEventListener('DOMContentLoaded', function () {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
-    },
-    on: {
-      slideChangeTransitionStart: () => {
-        gsap.to('.swiper-slide .slide-img', {
-          scale: 1.1,
-          rotateZ: 3,
-          opacity: 0,
-          duration: 0.6,
-          ease: 'power2.inOut'
-        });
-      },
-      slideChangeTransitionEnd: () => {
-        gsap.fromTo('.swiper-slide-active .slide-img',
-          {
-            scale: 1.3,
-            rotateZ: -2,
-            opacity: 0
-          },
-          {
-            scale: 1,
-            rotateZ: 0,
-            opacity: 1,
-            duration: 1.2,
-            ease: 'expo.out'
-          }
-        );
-      }
     }
   });
 
@@ -1987,7 +1891,7 @@ document.addEventListener('DOMContentLoaded', function () {
     loop: true,
     speed: 1000,
     autoplay: {
-      delay: 2000,
+      delay: 3000,
       disableOnInteraction: false
     },
     pagination: {
@@ -1997,33 +1901,6 @@ document.addEventListener('DOMContentLoaded', function () {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
-    },
-    on: {
-      slideChangeTransitionStart: () => {
-        gsap.to('.swiper-slide .slide-img', {
-          scale: 1.1,
-          rotateZ: 3,
-          opacity: 0,
-          duration: 0.6,
-          ease: 'power2.inOut'
-        });
-      },
-      slideChangeTransitionEnd: () => {
-        gsap.fromTo('.swiper-slide-active .slide-img',
-          {
-            scale: 1.3,
-            rotateZ: -2,
-            opacity: 0
-          },
-          {
-            scale: 1,
-            rotateZ: 0,
-            opacity: 1,
-            duration: 1.2,
-            ease: 'expo.out'
-          }
-        );
-      }
     }
   });
 
@@ -2032,7 +1909,7 @@ document.addEventListener('DOMContentLoaded', function () {
     loop: true,
     speed: 1000,
     autoplay: {
-      delay: 2000,
+      delay: 3000,
       disableOnInteraction: false
     },
     pagination: {
@@ -2042,33 +1919,6 @@ document.addEventListener('DOMContentLoaded', function () {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
-    },
-    on: {
-      slideChangeTransitionStart: () => {
-        gsap.to('.swiper-slide .slide-img', {
-          scale: 1.1,
-          rotateZ: 3,
-          opacity: 0,
-          duration: 0.6,
-          ease: 'power2.inOut'
-        });
-      },
-      slideChangeTransitionEnd: () => {
-        gsap.fromTo('.swiper-slide-active .slide-img',
-          {
-            scale: 1.3,
-            rotateZ: -2,
-            opacity: 0
-          },
-          {
-            scale: 1,
-            rotateZ: 0,
-            opacity: 1,
-            duration: 1.2,
-            ease: 'expo.out'
-          }
-        );
-      }
     }
   });
 </script>
@@ -2223,8 +2073,69 @@ document.addEventListener('DOMContentLoaded', function () {
         .galets-decoratifs-carousel .product-box {
             padding-bottom: 15px !important;
         }
+        
+        /* Centrer le carrousel du gravier mixte */
+        .gravier-center {
+            display: flex !important;
+            justify-content: center !important;
+        }
+        
+        .gravier-center .swiper-wrapper {
+            justify-content: center !important;
+        }
+        
+        .gravier-center .swiper-slide {
+            width: auto !important;
+            max-width: 400px !important;
+        }
     </style>
 
+    <!-- Script pour corriger tous les sliders -->
+    <script>
+        // Corriger tous les sliders restants
+        document.addEventListener('DOMContentLoaded', function() {
+            // Remplacer tous les délais de 2000ms par 3000ms
+            const scripts = document.querySelectorAll('script');
+            scripts.forEach(script => {
+                if (script.textContent.includes('delay: 2000')) {
+                    script.textContent = script.textContent.replace(/delay: 2000/g, 'delay: 3000');
+                }
+            });
+            
+            // Supprimer tous les effets GSAP des sliders
+            const allSliders = document.querySelectorAll('.swiper');
+            allSliders.forEach(slider => {
+                if (slider.classList.contains('dolerite-slider') || 
+                    slider.classList.contains('calcaire-slider') || 
+                    slider.classList.contains('pierre-slider') || 
+                    slider.classList.contains('galet-slider') || 
+                    slider.classList.contains('gravier-slider')) {
+                    
+                    // Réinitialiser le slider sans effets GSAP
+                    if (slider.swiper) {
+                        slider.swiper.destroy();
+                    }
+                    
+                    new Swiper(slider, {
+                        loop: true,
+                        speed: 1000,
+                        autoplay: {
+                            delay: 3000,
+                            disableOnInteraction: false
+                        },
+                        pagination: {
+                            el: slider.querySelector('.swiper-pagination'),
+                            clickable: true
+                        },
+                        navigation: {
+                            nextEl: slider.querySelector('.swiper-button-next'),
+                            prevEl: slider.querySelector('.swiper-button-prev')
+                        }
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 
 
