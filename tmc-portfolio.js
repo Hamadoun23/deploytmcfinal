@@ -89,6 +89,9 @@ class TMCPortfolio {
             slidesPerView: 1,
             spaceBetween: 20,
             loop: true,
+            // Assure que la navigation continue même au dernier élément
+            rewind: true,
+            watchOverflow: false,
             autoplay: {
                 delay: 3000,
                 disableOnInteraction: false,
@@ -136,6 +139,15 @@ class TMCPortfolio {
                 992: { slidesPerView: 1 },
                 1200: { slidesPerView: 1 }
             };
+        }
+
+        // Configuration spécifique pour les galets décoratifs afin de garantir la boucle
+        if (carouselElement.classList.contains('galets-decoratifs-carousel')) {
+            config.loop = true;
+            config.rewind = true; // si loop est désactivé par Swiper, on revient au début
+            config.watchOverflow = false; // ne jamais désactiver la nav quand peu d'items
+            // Aide Swiper à dupliquer suffisamment d'éléments pour la boucle sur grands écrans
+            config.loopAdditionalSlides = 5;
         }
 
         const swiper = new Swiper(carouselElement, config);

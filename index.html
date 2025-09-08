@@ -124,6 +124,7 @@
     }
     </style>
 
+    <link rel="stylesheet" href="tmc-portfolio.css">
 </head>
 
 <body class="tp-magic-cursor white-bg">
@@ -135,10 +136,22 @@
     <!-- End magic cursor -->
 
     <!-- Loading Screen avec Logo TMC -->
+    
+    <!-- Loading Screen TMC (thème mineur) -->
     <div id="loading-screen" class="loading-screen">
         <div class="loading-content">
-            <img src="Assetstmc/tmclogo/toglogo.jpg" alt="TMC Logo" class="loading-logo">
-            <div class="loading-spinner"></div>
+            <div class="loading-miner">
+                <div class="miner">
+                    <img src="Assetstmc/tmclogo/toglogo.jpg" alt="TMC Logo" class="loading-logo small">
+                </div>
+                <div class="pickaxe"></div>
+                <div class="rock"></div>
+                <div class="debris"><span></span><span></span><span></span><span></span></div>
+            </div>
+            <p class="loading-text">Chargement...</p>
+        </div>
+    </div>
+
             <p class="loading-text">Chargement...</p>
         </div>
     </div>
@@ -886,6 +899,44 @@
 
     <!-- JS here -->
     <!-- JS here -->
+
+
+    <!-- Script pour l'écran de chargement -->
+    <script>
+        // Gestion de l'écran de chargement
+        document.addEventListener('DOMContentLoaded', function() {
+            const loadingScreen = document.getElementById('loading-screen');
+            
+            // Masquer l'écran de chargement après 2 secondes
+            setTimeout(function() {
+                loadingScreen.classList.add('hidden');
+                
+                // Supprimer complètement l'élément après l'animation
+                setTimeout(function() {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }, 2000);
+            
+            // Masquer immédiatement si la page est déjà chargée
+            if (document.readyState === 'complete') {
+                loadingScreen.classList.add('hidden');
+                setTimeout(function() {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }
+        });
+        
+        // Masquer l'écran de chargement quand la page est complètement chargée
+        window.addEventListener('load', function() {
+            const loadingScreen = document.getElementById('loading-screen');
+            if (loadingScreen && !loadingScreen.classList.contains('hidden')) {
+                loadingScreen.classList.add('hidden');
+                setTimeout(function() {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }
+        });
+    </script>
 
 </body>
 
